@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100rem;
+  height: 110rem;
 }
 .urcrypto_hero_container {
   width: 100%;
@@ -104,7 +104,7 @@ box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 .urcrypto_hero_logo_cloud_container {
   height: 100%;
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -7,6 +7,7 @@ const Homepage = () => {
     <div className='urcrypto_homepage'>
  <Navbar/>
 <Hero/>
+<Benefits/>
  <Footer/>
 
     </div>

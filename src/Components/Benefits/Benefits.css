@@ -1,0 +1,33 @@
+.urcrypto_benefits{
+    background-color: aqua;
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.urcrypto_benefits_container{
+    background-color: blue;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 95%;
+}
+.urcrypto_benefits_text_area{
+    height: 100%;
+    width: 50%;
+  display: flex;
+  flex-direction: column;
+margin: 0 2rem;
+  align-items: center;
+  justify-content: space-around;
+    background-color: aliceblue;
+}
+.urcrypto_benefits_text_area h1{
+font-size: var(--heading-1-font-size);
+font-family: 'YukitaSansBold';
+text-transform: capitalize;
+text-align: start;
+}
