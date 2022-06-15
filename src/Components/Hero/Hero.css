@@ -1,0 +1,57 @@
+.urcrypto_hero{
+    margin-top: 3rem;
+    background-color: #00ffff;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45rem;
+}
+.urcrypto_hero_container{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.urcrypto_hero_stats{
+    display: flex;
+    background-color: var(--main-background-color);
+    border-radius: 1.2rem;
+    border: 1px thin var(--button-color);
+    width:80%;
+    height:12rem;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;}
+.urcrypto_hero_stats_container{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+    border-right: gray solid .2px;
+}
+.urcrypto_hero_stats_container_content{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: space-around;
+}
+.urcrypto_hero_stats :nth-child(3){
+    border: none;
+}
+.urcrypto_hero_stats_container_content h1{
+    font-size: var(--heading-1-font-size) ;
+    line-height: 2rem;
+    margin-bottom: -0.8rem;
+}
+.urcrypto_hero_stats_container_content p{
+    font-size: var(--stats--subheading-font-size) ;
+    font-weight: 400;
+}
