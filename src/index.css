@@ -14,26 +14,6 @@ body {
   src: local("YukitaSansBold"),
   url("./fonts/yukita-sans/YukitaSans-Bold.otf") format("opentype");
   font-weight: bold;
-
-  font-family: "YukitaSansBlack";
-  src: local("YukitaSansBlack"),
-  url("./fonts/yukita-sans/YukitaSans-Black.otf") format("opentype");
-  font-weight: bold;
-
-  font-family: "YukitaSansMedium";
-  src: local("YukitaSansMedium"),
-  url("./fonts/yukita-sans/YukitaSans-Medium.otf") format("opentype");
-
-
-  font-family: "YukitaSansExtraBold";
-  src: local("YukitaSansExtraBold"),
-  url("./fonts/yukita-sans/YukitaSans-ExtraBold.otf") format("opentype");
-  font-weight: bold;
-
-  font-family: "YukitaSansSemiBold";
-  src: local("YukitaSansSemiBold"),
-  url("./fonts/yukita-sans/YukitaSans-SemiBold.otf") format("opentype");
-  font-weight: bold;
 }
 
 code {

@@ -1,23 +1,19 @@
 .urcrypto_hero {
-  margin-top: 3rem;
-  background-color: #00ffff;
-  width: 90%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90rem;
+  height: 100rem;
 }
 .urcrypto_hero_container {
   width: 100%;
-  height: 100%;
-  background-color: aliceblue;
+  height: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
 .urcrypto_hero_header{
-    background-color: aquamarine;
     width: 90%;
     height: 30rem;
     display: flex;
@@ -30,19 +26,25 @@ color:var(--button-color);
 }
 .urcrypto_hero_header h1{
 font-size: var(--hero-header-font-size);
+font-family: "YukitaSansBold", serif;
 }
 .urcrypto_hero_header p{
     font-size: 1.2rem;
     font-family: 'Inter';
+    margin-top: -1rem;
 }
 .urcrypto_hero_header_container{
-    background-color: aliceblue;
     height: 90%;
     display: flex;
     align-items: center;
     width: 80%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.urcrypto_hero_circle{
+  align-self:flex-start;
+  justify-self:center;
+background-color: aqua;
 }
 .urcrypto_hero_input{
     display: flex;
@@ -59,6 +61,7 @@ font-size: var(--hero-header-font-size);
    border-radius: .2rem;
    border: none;
    font-size: 1rem;
+   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 .urcrypto_hero_input_submit{
 width: 169px;
@@ -70,6 +73,7 @@ font-family: 'Inter',Arial, Helvetica, sans-serif;
 font-size: 1rem;
 border-radius: .6rem;
 cursor: pointer;
+box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
 .urcrypto_hero_image{
@@ -77,8 +81,7 @@ cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blue;
-    height: 50%;
+    height: 40%;
 }
 .urcrypto_hero_image_container{
     width: 100%;
@@ -94,7 +97,6 @@ cursor: pointer;
 .urcrypto_hero_logo_cloud {
   height: 9rem;
   width: 90%;
-  background-color: aqua;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,6 +132,10 @@ cursor: pointer;
 }
 .urcrypto_hero_stats {
   display: flex;
+  background: url(../../assets/27121.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: var(--main-background-color);
   border-radius: 1.2rem;
   border: 1px thin var(--button-color);
@@ -153,7 +159,6 @@ cursor: pointer;
   height: 90%;
   display: flex;
   flex-direction: column;
-  background-color: antiquewhite;
   align-items: center;
   justify-content: space-around;
 }
@@ -163,6 +168,7 @@ cursor: pointer;
 .urcrypto_hero_stats_container_content h1 {
   font-size: var(--heading-1-font-size);
   line-height: 2rem;
+  font-family: 'YukitaSansBold';
   margin-bottom: -0.8rem;
 }
 .urcrypto_hero_stats_container_content p {
