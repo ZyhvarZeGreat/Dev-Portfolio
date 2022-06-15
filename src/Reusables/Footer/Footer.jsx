@@ -1,8 +1,9 @@
 import React from 'react'
 import './Footer.css'
 import {UilFacebook,UilTwitterAlt,UilYoutube,UilInstagram,UilLinkedin} from '@iconscout/react-unicons'
-
+import footer_data from '../../Data/footer_data'
 const Footer = () => {
+  
   return (
     <div className='urcrypto_footer'>
     
@@ -68,7 +69,7 @@ const Footer = () => {
   
 </div>
 <div className='urcrypto_footer_bottom'>
-<p>&copy; Devloped  by Bolude Daniel, All Rights Reserved</p>
+<p>&copy; Developed  by Bolude Daniel, All Rights Reserved</p>
 </div>
   
 </div>    

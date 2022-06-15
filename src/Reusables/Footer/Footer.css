@@ -1,6 +1,5 @@
 .urcrypto_footer{
-    height: 30.611rem;
-    background-color: blue;
+    height: 37.611rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -8,10 +7,62 @@
 }
 .urcrypto_footer_container{
 display: grid;
-background-color: aquamarine;
-height: 24rem;
-width: 75%;
+height: 34rem;
+width: 90%;
 grid-template-columns:  repeat((auto-fit, minmax()));
+}
+.urcrypto_footer_logo{
+
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    align-self: start;
+}
+.urcrypto_footer_logo img{
+    height: 4rem;
+    align-self: start;
+    width: 15rem;
+}
+.urcrypto_footer_logo_social_links{
+    width:80%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.urcrypto_footer_logo_social_links svg{
+    height: 2rem;
+    align-items:center;
+    color:var(--main-background-color);
+    background-color: #626262;
+    justify-content: center;
+    display: flex;
+    border-radius: 2rem;
+    padding: 7px;
+    width: 2rem;
+}
+
+.urcrypto_footer_top{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+
+    margin-top: 4rem;
+    align-items: flex-start;
+    text-align: start;
+    justify-content: space-between;
+}
+.urcrypto_footer_top_text{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.urcrypto_footer_top_text h3{
+font-family: 'Inter';
 }
 .urcrypto_footer_bottom{
     font-family: 'Inter';
