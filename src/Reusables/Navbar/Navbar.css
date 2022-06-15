@@ -39,6 +39,9 @@ width: max-content;
     font-weight: 400;
     color:black;
 }
+.urcrypto_mobile_navbar_btn{
+    display: none;
+}
 
 
 .urcrypto_navbar_cta{
@@ -67,12 +70,33 @@ width: max-content;
 
 @media screen and (max-width:768px) {
     .urcrypto_navbar_container{
-        background-color: aqua;
         width: 98%;
     }
 }
 @media screen and (max-width:600px) {
 .urcrypto_navbar_links{
     display: none;
+}
+.urcrypto_navbar_container{
+
+    width: 97%;
+}
+.urcrypto_navbar_links{
+    display: none;
+}.urcrypto_navbar_cta{
+    display: none;
+}
+.urcrypto_mobile_navbar_btn{
+    display: block;
+    background-color: transparent;
+    height:2.5rem ;
+    width: 2.5rem;
+    border: var(--button-color) solid  1px;
+   border-radius: .5rem;
+   cursor: pointer;
+}
+.urcrypto_mobile_navbar_btn svg{
+height: 1.8rem;
+width: 1.8rem;
 }
 }

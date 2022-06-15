@@ -1,19 +1,21 @@
 .urcrypto_footer{
     height: 37.611rem;
-    width: 100%;
+    width: 90%;
+    align-self: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .urcrypto_footer_container{
-display: grid;
+display: flex;
 height: 34rem;
-width: 90%;
-grid-template-columns:  repeat((auto-fit, minmax()));
+width: 98%;
+align-items: center;
+flex-direction: column;
+justify-content: center;
 }
 .urcrypto_footer_logo{
-
-    width: 40%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -26,8 +28,8 @@ grid-template-columns:  repeat((auto-fit, minmax()));
     width: 15rem;
 }
 .urcrypto_footer_logo_social_links{
-    width:80%;
-    height: 30%;
+    width:23rem;
+    height: 11rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,23 +49,61 @@ grid-template-columns:  repeat((auto-fit, minmax()));
 .urcrypto_footer_top{
     display: flex;
     flex-direction: row;
-    width: 90%;
-
+    width: 100%;
     margin-top: 4rem;
     align-items: flex-start;
     text-align: start;
     justify-content: space-between;
 }
 .urcrypto_footer_top_text{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(180px,1fr));
     height: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+    place-items: start;
+    width:70%;
 }
 .urcrypto_footer_top_text h3{
 font-family: 'Inter';
 }
 .urcrypto_footer_bottom{
     font-family: 'Inter';
+}
+@media screen and (max-width:1024px) {
+    .urcrypto_footer{
+        height:60rem;
+        width: 98%;
+    }
+   
+    .urcrypto_footer_logo{
+        width: 50%;
+    }
+    .urcrypto_footer_top_text{
+
+        width: 100%;
+      
+    }
+    @media screen and (max-width:700px) {
+        .urcrypto_footer{
+            height:80rem;
+            width: 98%;
+        }
+        .urcrypto_footer_top{
+            flex-direction: column;
+        }
+        .urcrypto_footer_logo{
+            width: 100%;
+            align-items: center;
+
+        }
+        .urcrypto_footer_logo img{
+            align-self: center;
+        }
+        .urcrypto_footer_logo_social_links{
+            width: 90%;}
+}
+}
+@media screen and (max-width:374px){
+    .urcrypto_footer{
+        height:110rem;
+    }
 }

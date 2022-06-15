@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import {UilBars} from '@iconscout/react-unicons'
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
@@ -21,6 +22,9 @@ const Navbar = () => {
         <Link className="urcrypto_navbar_cta_signin" to ="Sign_In">Sign in</Link>
         <Link className="urcrypto_navbar_cta_signup" to ="Signup">Get Started</Link>
       </div>
+      <button className="urcrypto_mobile_navbar_btn">
+      <UilBars/>
+      </button>
     </div>
     </div>
   );
