@@ -5,10 +5,10 @@ function App() {
   return (
     <div className="App">
      <Routes>
-      <Route exact path = "/" element={<Homepage/>}/>
-      <Route exact path = "/Dashboard" element={<Dashboard/>}/>
-      <Route exact path = "/Sign up" element={<Signup/>}/>
-      <Route exact path = "/Sign in" element={<Sign_In/>}/>
+      <Route exact path = "/" index element={<Homepage/>}/>
+      <Route exact path = "Dashboard" element={<Dashboard/>}/>
+      <Route exact path = "Sign up" element={<Signup/>}/>
+      <Route exact path = "Sign in" element={<Sign_In/>}/>
      </Routes>
     </div>
   );
