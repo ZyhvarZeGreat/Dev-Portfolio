@@ -1,0 +1,58 @@
+.urcrypto_navbar{
+    background-color: aliceblue;
+    width: 100%;
+    height: 5rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    justify-content: space-around;
+}
+.urcrypto_navbar a{
+text-decoration: none;
+}
+.urcrypto_navbar_container{
+    height: 100%;
+    width: 90%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.urcrypto_navbar_links{
+    display: flex;
+    width:25%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.urcrypto_navbar_links a{
+     font-size: var(--heading-3-font-size);
+    font-family: 'Inter';
+    font-weight: 400;
+    color:black;
+}
+
+
+.urcrypto_navbar_cta{
+    width: 16%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter';
+}
+.urcrypto_navbar_cta_signin{
+    font-weight: 600;
+    color: black;
+}
+.urcrypto_navbar_cta_signup{
+    border: var(--button-color) solid 1px;
+    padding: 0.756rem 1.512rem;
+    display: flex;
+    align-items: center;
+    border-radius: .6rem;
+    color: var(--button-color);
+    font-weight: 600;
+}
