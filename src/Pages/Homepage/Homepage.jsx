@@ -1,8 +1,14 @@
 import React from 'react'
-
+import './Homepage.css'
+import {Footer,Navbar} from '../../Reusables/index'
 const Homepage = () => {
   return (
-    <div>Homepage</div>
+    <div className='urcrypto_homepage'>
+ <Navbar/>
+
+ <Footer/>
+
+    </div>
   )
 }
 
