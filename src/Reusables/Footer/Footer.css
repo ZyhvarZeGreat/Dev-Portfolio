@@ -59,6 +59,7 @@ justify-content: center;
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(180px,1fr));
     height: 100%;
+    font-family: 'Inter';
     place-items: start;
     width:70%;
 }

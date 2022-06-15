@@ -3,7 +3,7 @@ let benefits_data = [
         id:1,
         number:1,
         heading:"sync between platforms",
-        desc:"No matter if you're using our web interface or mobile app  your data is always synced. Just <br/> one account for all our services."
+        desc:"No matter if you're using our web interface or mobile app  your data is always synced. Just  one account for all our services."
     },
     {
         id:2,
@@ -15,7 +15,7 @@ let benefits_data = [
         id:3,
         number:3,
         heading:"Security by default",
-        desc:"Enable Privacy mode and app locking to <br> protect your data"
+        desc:"Enable Privacy mode and app locking to  protect your data"
     },
     
 ]
