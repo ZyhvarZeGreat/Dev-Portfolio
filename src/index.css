@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: "YukitaSansBold";
+  src: local("YukitaSansBold"),
+  url("./fonts/yukita-sans/YukitaSans-Bold.otf") format("opentype");
+  font-weight: bold;
+
+  font-family: "YukitaSansBlack";
+  src: local("YukitaSansBlack"),
+  url("./fonts/yukita-sans/YukitaSans-Black.otf") format("opentype");
+  font-weight: bold;
+
+  font-family: "YukitaSansMedium";
+  src: local("YukitaSansMedium"),
+  url("./fonts/yukita-sans/YukitaSans-Medium.otf") format("opentype");
+
+
+  font-family: "YukitaSansExtraBold";
+  src: local("YukitaSansExtraBold"),
+  url("./fonts/yukita-sans/YukitaSans-ExtraBold.otf") format("opentype");
+  font-weight: bold;
+
+  font-family: "YukitaSansSemiBold";
+  src: local("YukitaSansSemiBold"),
+  url("./fonts/yukita-sans/YukitaSans-SemiBold.otf") format("opentype");
+  font-weight: bold;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+:root {
+  --main-background-color:#fff;
+  --main-text-color:#2c3131;
+  --button-color:#2725e7;
+  --features-section-1-background-color:#e8fafe;
+  --features-section-2-background-color:#fff8ee;
+  --features-number-font-color:#D0DBFF;
+  --hero-header-font-size: 4rem;
+  --hero-small-ellipse-size:24.188rem;
+  --hero-medium-ellipse-size:24.938rem;
+  --hero-large-ellipse-size:24.938rem;
+  --heading-1-font-size:3rem;
+  --heading-2-font-size:1.5rem;
+  --heading-3-font-size:1rem;
+  --stats-subheading-font-size:1.126rem;
+  --CTA-font-size:2.5rem;
+}
