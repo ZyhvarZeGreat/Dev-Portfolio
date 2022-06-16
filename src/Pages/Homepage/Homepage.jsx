@@ -8,6 +8,7 @@ const Homepage = () => {
  <Navbar/>
 <Hero/>
 <Benefits/>
+<Features/>
  <Footer/>
 
     </div>

@@ -26,7 +26,7 @@ const Hero = () => {
     <p> Open a free account in minutes right from your phone and make <br/> your money go further</p>
     <div className='urcrypto_hero_input'>
       <input type="email" className="urcrypto_hero_input_placeholder" placeholder="Email Address...." />
-      <input type="submit" className="urcrypto_hero_input_submit" placeholder="Get Started" />
+      <input type="submit" className="urcrypto_hero_input_submit" value="Get Started" />
   </div>
     </div>
   </div>

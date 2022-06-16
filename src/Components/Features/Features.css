@@ -1,0 +1,89 @@
+.urcrypto_features {
+  background-color: aqua;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8rem;
+  margin-top: 3rem;
+}
+.urcrypto_features_container{
+    height: 80%;
+    width: 100%;
+    background-color: blueviolet;
+}
+.urcrypto_features_section {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.urcrypto_features_section img {
+  width: 300px;
+  height: 300px;
+}
+.urcrypto_features_section_container {
+  width: 95%;
+  height: 50rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: blue;
+}
+.urcrypto_features_section_image_area{
+    width: 50%;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 80%;
+background-color: aliceblue;
+}
+
+.urcrypto_features_phone{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    display: flex;
+    background-color: burlywood;
+}
+.urcrypto_features_phone img{
+height: 80%;
+filter: drop-shadow(22.7632px 7.58772px 45.5263px rgba(0, 0, 0, 0.1));
+width: 20rem;
+}
+.urcrypto_features_section_text_area{
+    height: 80%;
+    background-color: cadetblue;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.urcrypto_features_section_text_area h1{
+font-size: var(--heading-1-font-size);
+width: 90%;
+background-color: aliceblue;
+font-family: 'YukitaSansBold';
+text-transform: capitalize;
+letter-spacing: .05rem;
+text-align: start;
+} 
+.urcrypto_features_section_text_area p{
+    font-weight: 400;
+    font-size: 18px;
+font-family: 'Inter';
+height: 4rem;
+width: 90%;
+display: flex;
+align-items: center;
+text-align: start;
+text-transform: capitalize;
+color: #626262;
+}

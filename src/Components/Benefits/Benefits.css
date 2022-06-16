@@ -23,7 +23,7 @@
   justify-content: space-around
 }
 .urcrypto_benefits_image_area{
-    width: 50%;
+    width: 60%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -91,6 +91,7 @@ height: 25.5rem;
 .urcrypto_benefits_description_container {
   width: 100%;
   display: flex;
+  border-bottom: #E3E3E3 solid 1px;
   flex-direction: row;
 }
 .urcrypto_benefits_description_text {

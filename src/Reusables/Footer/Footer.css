@@ -35,7 +35,7 @@ justify-content: center;
     justify-content: space-between;
 }
 .urcrypto_footer_logo_social_links svg{
-    height: 2rem;
+    height: 1.8rem;
     align-items:center;
     color:var(--main-background-color);
     background-color: #626262;
@@ -43,7 +43,7 @@ justify-content: center;
     display: flex;
     border-radius: 2rem;
     padding: 7px;
-    width: 2rem;
+    width: 1.8rem;
 }
 
 .urcrypto_footer_top{

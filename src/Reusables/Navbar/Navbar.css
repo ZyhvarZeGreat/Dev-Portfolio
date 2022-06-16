@@ -1,102 +1,103 @@
-.urcrypto_navbar{
-    width: 100%;
-    height: 5rem;
-    margin-top: 1rem;
-    display: flex;
-    flex-direction:row ;
-    align-items: center;
-    justify-content: space-around;
+.urcrypto_navbar {
+  /* position: sticky;
+  position: -webkit-sticky;
+  top: 0; */
+  width: 100%;
+  height: 5rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
-.urcrypto_navbar a{
-text-decoration: none;
+.urcrypto_navbar a {
+  text-decoration: none;
 }
-.urcrypto_navbar_container{
-    height: 100%;
-    width: 90%;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+.urcrypto_navbar_container {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-.urcrypto_navbar_logo{
-height: max-content;
-width: max-content;
+.urcrypto_navbar_logo {
+  height: max-content;
+  width: max-content;
 }
-.urcrypto_navbar_logo img{
-    height: 2rem;
-    width: 8rem;
+.urcrypto_navbar_logo img {
+  height: 2rem;
+  width: 8rem;
 }
-.urcrypto_navbar_links{
-    display: flex;
-    width:20rem;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+.urcrypto_navbar_links {
+  display: flex;
+  width: 20rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-.urcrypto_navbar_links a{
-     font-size: var(--heading-3-font-size);
-    font-family: 'Inter';
-    font-weight: 400;
-    color:black;
+.urcrypto_navbar_links a {
+  font-size: var(--heading-3-font-size);
+  font-family: "Inter";
+  font-weight: 400;
+  color: black;
 }
-.urcrypto_mobile_navbar_btn{
+.urcrypto_mobile_navbar_btn {
+  display: none;
+}
+
+.urcrypto_navbar_cta {
+  width: 14rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Inter";
+}
+.urcrypto_navbar_cta_signin {
+  font-weight: 600;
+  color: black;
+}
+.urcrypto_navbar_cta_signup {
+  border: var(--button-color) solid 1px;
+  padding: 0.756rem 1.512rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.6rem;
+  color: var(--button-color);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .urcrypto_navbar_container {
+    width: 98%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .urcrypto_navbar_links {
     display: none;
-}
-
-
-.urcrypto_navbar_cta{
-    width: 14rem;
-    height: 2rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'Inter';
-}
-.urcrypto_navbar_cta_signin{
-    font-weight: 600;
-    color: black;
-}
-.urcrypto_navbar_cta_signup{
-    border: var(--button-color) solid 1px;
-    padding: 0.756rem 1.512rem;
-    display: flex;
-    align-items: center;
-    border-radius: .6rem;
-    color: var(--button-color);
-    font-weight: 600;
-}
-
-
-@media screen and (max-width:768px) {
-    .urcrypto_navbar_container{
-        width: 98%;
-    }
-}
-@media screen and (max-width:600px) {
-.urcrypto_navbar_links{
-    display: none;
-}
-.urcrypto_navbar_container{
-
+  }
+  .urcrypto_navbar_container {
     width: 97%;
-}
-.urcrypto_navbar_links{
+  }
+  .urcrypto_navbar_links {
     display: none;
-}.urcrypto_navbar_cta{
+  }
+  .urcrypto_navbar_cta {
     display: none;
-}
-.urcrypto_mobile_navbar_btn{
+  }
+  .urcrypto_mobile_navbar_btn {
     display: block;
     background-color: transparent;
-    height:2.5rem ;
+    height: 2.5rem;
     width: 2.5rem;
-    border: var(--button-color) solid  1px;
-   border-radius: .5rem;
-   cursor: pointer;
-}
-.urcrypto_mobile_navbar_btn svg{
-height: 1.8rem;
-width: 1.8rem;
-}
+    border: var(--button-color) solid 1px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  .urcrypto_mobile_navbar_btn svg {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
 }

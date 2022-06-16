@@ -134,7 +134,7 @@ box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
   display: flex;
   background: url(../../assets/27121.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position:left;
   background-size: cover;
   background-color: var(--main-background-color);
   border-radius: 1.2rem;
