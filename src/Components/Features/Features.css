@@ -14,7 +14,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: aqua;
 
 }
 .section_1 .urcrypto_features_section_image_area {
@@ -23,14 +22,13 @@
   justify-content: center;
   height: 31rem;
   width: 50%;
-  background-color: antiquewhite;
   margin-left:5rem ;
 }
 .section_1 .urcrypto_features_section_image_area .urcrypto_features_phone{
   background-color: var(--features-section-2-background-color);
   width: 32rem;
   display: flex;
-    border-radius: 1rem;
+    border-radius: 2rem;
   align-items: center;
   justify-content: center;
 }
@@ -38,7 +36,7 @@
   background-color: var(--features-section-1-background-color);
   width: 32rem;
   display: flex;
-    border-radius: 1rem;
+    border-radius: 2rem;
   align-items: center;
   justify-content: center;
 }
@@ -46,7 +44,7 @@
   background-color: var(--features-section-2-background-color);
   width: 100%;
   display: flex;
-  border-radius: 1rem;
+  border-radius: 2rem;
   align-items: center;
   justify-content: center;
 }
@@ -56,8 +54,6 @@
   height: 32.1rem;
   justify-content: center;
   width: 100%;
-  background-color: aquamarine;
-
 }.section_3 .urcrypto_features_section_image_area {
   display: flex;
   align-items: center;
@@ -105,7 +101,7 @@
   position: absolute;
   margin-top: 3.6rem;
  left: 6%;
- 
+ box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 .section_2 .urcrypto_features_info {
   background-color: var(--features-section-1-background-color);
@@ -115,18 +111,20 @@
  align-self: flex-start;
  margin-top: -3rem;
  left: 75%;
+ box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
 .section_3 .urcrypto_features_info {
   background-color: var(--features-section-2-background-color);
-  height: 12rem;
-  width: 16rem;
+  height: 14rem;
+  width: 31rem;
   position: relative;
   align-self: flex-end;
   right: 190px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 .section_1 .urcrypto_features_phone_description img {
   height: 100%;

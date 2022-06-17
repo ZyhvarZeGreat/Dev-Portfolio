@@ -1,3 +1,6 @@
 export {default as Hero} from './Hero/Hero'
 export {default as Features} from './Features/Features'
 export {default as Benefits} from './Benefits/Benefits'
+export {default as Get_started} from './Get started/Get_started'
+export {default as Testimonial} from './Testimonials/Testimonial'
+export {default as call_to_action} from './CTA/call_to_action'

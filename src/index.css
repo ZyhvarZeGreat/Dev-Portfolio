@@ -15,6 +15,18 @@ body {
   url("./fonts/yukita-sans/YukitaSans-Bold.otf") format("opentype");
   font-weight: bold;
 }
+@font-face {
+  font-family: "YukitaSansRegular";
+  src: local("YukitaSansRegular"),
+  url("./fonts/yukita-sans/YukitaSans-Regular.otf") format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "YukitaSansLight";
+  src: local("YukitaSansLight"),
+  url("./fonts/yukita-sans/YukitaSans-Light.otf") format("opentype");
+  font-weight: bold;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
