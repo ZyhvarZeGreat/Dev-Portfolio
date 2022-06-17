@@ -1,6 +1,5 @@
 .urcrypto_features {
-  background-color: aqua;
-  width: 90%;
+  width: 95%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,82 +7,178 @@
   gap: 8rem;
   margin-top: 3rem;
 }
-.urcrypto_features_container{
-    height: 80%;
-    width: 100%;
-    background-color: blueviolet;
-}
-.urcrypto_features_section {
+
+.section_1 {
   height: 90%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: aqua;
+
+}
+.section_1 .urcrypto_features_section_image_area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 31rem;
+  width: 50%;
+  background-color: antiquewhite;
+  margin-left:5rem ;
+}
+.section_1 .urcrypto_features_section_image_area .urcrypto_features_phone{
+  background-color: var(--features-section-2-background-color);
+  width: 32rem;
+  display: flex;
+    border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.section_2 .urcrypto_features_section_image_area .urcrypto_features_phone{
+  background-color: var(--features-section-1-background-color);
+  width: 32rem;
+  display: flex;
+    border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.section_3 .urcrypto_features_section_image_area .urcrypto_features_phone{
+  background-color: var(--features-section-2-background-color);
   width: 100%;
+  display: flex;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.section_2 .urcrypto_features_section_image_area {
+  display: flex;
+  align-items: center;
+  height: 32.1rem;
+  justify-content: center;
+  width: 100%;
+  background-color: aquamarine;
+
+}.section_3 .urcrypto_features_section_image_area {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  justify-content: center;
+  width: 100%;
+  border-radius: 1rem;
+
+
+}
+.section_1 .urcrypto_features_section_image_area .urcrypto_features_phone img {
+  height: 30rem;
+  width: 23rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.section_2 .urcrypto_features_section_image_area .urcrypto_features_phone img {
+  background-color: var(--features-section-1-background-color);
+  align-self: center;
+  height: 30rem;
+  width: 22rem;
+  margin-top: 2rem;
+  margin-right: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.urcrypto_features_section img {
-  width: 300px;
-  height: 300px;
-}
-.urcrypto_features_section_container {
-  width: 95%;
-  height: 50rem;
+.section_3 .urcrypto_features_section_image_area .urcrypto_features_phone img {
+  background-color: var(--features-section-2-background-color);
+  align-self: center;
+  height: 28rem;
+  margin-top: 2rem;
+  width: 17rem;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  background-color: blue;
+  justify-content: center;
 }
-.urcrypto_features_section_image_area{
-    width: 50%;
-    align-items: center;
-    display:flex;
-    justify-content: center;
-    flex-direction: row;
-    height: 80%;
-background-color: aliceblue;
+.section_1 .urcrypto_features_info {
+  height: 9rem;
+  width: 20rem;
+  display: flex;
+ align-self: center;
+  position: absolute;
+  margin-top: 3.6rem;
+ left: 6%;
+ 
+}
+.section_2 .urcrypto_features_info {
+  background-color: var(--features-section-1-background-color);
+  height: 14rem;
+  width: 20rem;
+  position: absolute;
+ align-self: flex-start;
+ margin-top: -3rem;
+ left: 75%;
 }
 
-.urcrypto_features_phone{
-    height:100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 80%;
-    display: flex;
-    background-color: burlywood;
+.section_3 .urcrypto_features_info {
+  background-color: var(--features-section-2-background-color);
+  height: 12rem;
+  width: 16rem;
+  position: relative;
+  align-self: flex-end;
+  right: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.urcrypto_features_phone img{
-height: 80%;
-filter: drop-shadow(22.7632px 7.58772px 45.5263px rgba(0, 0, 0, 0.1));
-width: 20rem;
+.section_1 .urcrypto_features_phone_description img {
+  height: 100%;
+  width: 100%;
 }
-.urcrypto_features_section_text_area{
-    height: 80%;
-    background-color: cadetblue;
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.section_2 .urcrypto_features_phone_description img {
+  height: 100%;
+  width: 100%;
 }
-.urcrypto_features_section_text_area h1{
-font-size: var(--heading-1-font-size);
-width: 90%;
-background-color: aliceblue;
-font-family: 'YukitaSansBold';
-text-transform: capitalize;
-letter-spacing: .05rem;
-text-align: start;
-} 
-.urcrypto_features_section_text_area p{
-    font-weight: 400;
-    font-size: 18px;
-font-family: 'Inter';
-height: 4rem;
-width: 90%;
-display: flex;
-align-items: center;
-text-align: start;
-text-transform: capitalize;
-color: #626262;
+.section_3 .urcrypto_features_phone_description img {
+  height: 100%;
+  width: 100%;
+}
+.section_2 {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.section_3 {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.urcrypto_features_section_text_area {
+  height: 90%;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.urcrypto_features_section_text_area h1 {
+  font-size: var(--heading-1-font-size);
+  width: 90%;
+  font-family: "YukitaSansBold";
+  text-transform: capitalize;
+  letter-spacing: 0.05rem;
+  text-align: start;
+}
+.urcrypto_features_section_text_area p {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Inter";
+  height: 4rem;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  text-transform: capitalize;
+  color: #626262;
 }
