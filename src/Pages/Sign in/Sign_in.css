@@ -1,0 +1,170 @@
+.urcrypto_signin_page{
+    background-color: aqua;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.urcrypto_signin_container{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 95%;
+    background-color: azure;
+}
+.urcrypto_signin_text_area{
+    background-color: rgb(232, 52, 52);
+    width: 50%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.urcrypto_signin_header{
+    height: 10%;
+    background-color: antiquewhite;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.urcrypto_signin_header p{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+width: 50%;
+font-size: 1.1rem;
+font-family: 'Inter';
+}
+.urcrypto_signin_header a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Inter';
+    color: var(--button-color);
+    border: var(--button-color) solid 1px;
+    border-radius: .4rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+}
+.urcrypto_signin_header img{
+ height:3rem ;
+width: 12rem;
+}
+.urcrypto_sign_in_content{
+    width: 100%;
+    height: 90%;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.urcrypto_sign_in_content h1{
+    font-family: 'YukitaSansBold';
+    font-size: var(--heading-1-font-size);
+}
+.urcrypto_sign_in_content p{
+    font-family: 'Inter';
+    font-size: 1.2rem;
+}
+.urcrypto_social_sign_in{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    background-color: aqua;
+}
+.urcrypto_social_sign_in div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: .4rem;
+    width: 40%;
+    border: #e5e5e5 solid 1px;
+    background-color: azure;
+}
+
+.urcrypto_social_sign_in p{
+font-family: 'Inter';
+font-size: 1.2rem;
+}
+.urcrypto_social_sign_in svg{
+    height: 2rem;
+    width: 2rem;
+}
+.urcrypto_email_sign_in{
+    height: 60%;
+    background-color: antiquewhite;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.urcrypto_email_sign_in input{
+    height: 4rem;
+    width: 25rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: .3rem;
+    text-align: left;
+    font-family: 'Inter';
+}
+.urcrypto_email_sign_in_features{
+    background-color: aliceblue;
+    width: 25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.urcrypto_email_sign_in_features a{
+text-decoration: none;
+font-size: 1rem;
+font-family: 'Inter';
+}
+.urcrypto_email_sign_in button{
+    height: 3rem;
+    width: 20rem;
+    background-color: transparent;
+    border: var(--button-color) solid 1px;
+    border-radius: .4rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: 'Inter';
+}
+.urcrypto_signin_image_area{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+}
+.urcrypto_signin_image_area_container{
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.urcrypto_signin_image_area img{
+    max-height: 35rem;
+    max-width: 40rem;
+background-color: aqua;
+position: relative;
+
+}

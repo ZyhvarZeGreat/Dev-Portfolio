@@ -19,7 +19,7 @@ const Navbar = () => {
       </div>
 
       <div className="urcrypto_navbar_cta">
-        <Link className="urcrypto_navbar_cta_signin" to ="Sign_In">Sign in</Link>
+        <Link className="urcrypto_navbar_cta_signin" to ="Signin">Sign in</Link>
         <Link className="urcrypto_navbar_cta_signup" to ="Signup">Get Started</Link>
       </div>
       <button className="urcrypto_mobile_navbar_btn">

@@ -5,14 +5,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 .urcrypto_footer_container{
 display: flex;
-height: 34rem;
+height: 100%;
 width: 98%;
 align-items: center;
 flex-direction: column;
-justify-content: center;
+justify-content: flex-end;
 }
 .urcrypto_footer_logo{
     width: 30%;
@@ -50,8 +51,8 @@ justify-content: center;
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-top: 4rem;
     align-items: flex-start;
+    margin-bottom: 5rem;
     text-align: start;
     justify-content: space-between;
 }
@@ -68,6 +69,17 @@ font-family: 'Inter';
 }
 .urcrypto_footer_bottom{
     font-family: 'Inter';
+    height: 20%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-top: #e5e5e5 1px solid;
+    width: 100%;
+}
+.urcrypto_footer_bottom p{
+font-size: 1.2rem;
+
+
 }
 @media screen and (max-width:1024px) {
     .urcrypto_footer{

@@ -9,7 +9,7 @@ let get_started_card_data = [
     index:2,
     heading:"Fund",
     image:"get started 2",
-    content:" top up your account with your preferred payment method and recieve a 12% deposot bonus ",
+    content:" top up your account with your preferred payment method and recieve a 12% deposit bonus ",
 },
 {
     index:3,

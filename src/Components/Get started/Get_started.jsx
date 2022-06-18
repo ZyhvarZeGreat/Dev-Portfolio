@@ -17,7 +17,10 @@ import get_started_card_data from './gets_started_card_data'
         <p>  sign up and start trading, it's pretty simple</p>
       </div>
      <div className='urcrypto_get_started_cards'>
+     <div className='urcrypto_get_started_cards_wrapper'>
      {cards}
+     </div>
+
      </div>
    
   
