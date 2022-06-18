@@ -1,1 +1,1 @@
-Urcrypto is an exploration of the methods of utilization in reacr
+Urcrypto is an exploration of the methods of utilization in react
