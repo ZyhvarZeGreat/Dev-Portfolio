@@ -1,5 +1,5 @@
 .urcrypto_signin_page {
-  background-color: aqua;
+
   height: 100vh;
   width: 100%;
   display: flex;
@@ -11,27 +11,22 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-
   height: 95%;
-  background-color: azure;
 }
 .urcrypto_signin_text_area {
-  background-color: rgb(232, 52, 52);
   width: 50%;
-  height: 95%;
+  height:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content:space-between;
 }
 .urcrypto_signin_header {
-  height: 10%;
-  background-color: antiquewhite;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .urcrypto_signin_header p {
   display: flex;
@@ -62,7 +57,6 @@
 .urcrypto_sign_in_content {
   width: 100%;
   height: 90%;
-  background-color: blue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,7 +76,6 @@
   align-items: center;
   justify-content: space-around;
   width: 50%;
-  background-color: aqua;
 }
 .urcrypto_social_sign_in div {
   display: flex;
@@ -92,7 +85,6 @@
   border-radius: 0.4rem;
   width: 40%;
   border: #e5e5e5 solid 1px;
-  background-color: azure;
 }
 
 .urcrypto_social_sign_in p {
@@ -105,7 +97,6 @@
 }
 .urcrypto_email_sign_in {
   height: 60%;
-  background-color: antiquewhite;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -120,9 +111,9 @@
   border-radius: 0.3rem;
   text-align: left;
   font-family: "Inter";
+  background-color: #e5e4e4;
 }
 .urcrypto_email_sign_in_features {
-  background-color: aliceblue;
   width: 25rem;
   display: flex;
   flex-direction: row;
@@ -150,12 +141,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: blueviolet;
 }
 .urcrypto_signin_image_area_container {
-  height: 100%;
+  height: 95%;
+border-top-right-radius:20px ;
+border-bottom-right-radius:20px ;
   width: 100%;
-  background-color: aliceblue;
+  background-color: var(--button-color);
   display: flex;
   align-items: center;
   justify-content: center;
