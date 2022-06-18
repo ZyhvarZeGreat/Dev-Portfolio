@@ -162,9 +162,8 @@ font-family: 'Inter';
     justify-content: center;
 }
 .urcrypto_signin_image_area img{
-    max-height: 35rem;
-    max-width: 40rem;
+    max-height: 90%;
+    max-width: 90%;
 background-color: aqua;
 position: relative;
-
 }
