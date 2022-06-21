@@ -1,28 +1,29 @@
 .urcrypto_signin_page {
 
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .urcrypto_signin_container {
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 95%;
+  height: 100%;
 }
 .urcrypto_signin_text_area {
   width: 50%;
-  height:100%;
+  height:90%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:space-between;
+  justify-content:space-around;
 }
 .urcrypto_signin_header {
   width: 100%;
+  height: 8%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -60,7 +61,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .urcrypto_sign_in_content h1 {
   font-family: "YukitaSansBold";
@@ -87,6 +88,9 @@
   cursor: pointer;
   border: #e5e5e5 solid 1px;
 }
+.urcrypto_social_sign_in div svg  {
+  color: var(--button-color);
+}
 
 .urcrypto_social_sign_in p {
   font-family: "Inter";
@@ -104,6 +108,9 @@
   align-items: center;
   justify-content: space-around;
 }
+#home{
+  border: none;
+}
 .urcrypto_email_sign_in input {
   height: 4rem;
   width: 25rem;
@@ -114,6 +121,10 @@
   font-family: "Inter";
   background-color: #e5e4e4;
 }
+.urcrypto_email_sign_in_heading {
+font-size:1.3rem;
+}
+
 .urcrypto_email_sign_in_features {
   width: 25rem;
   display: flex;
@@ -144,9 +155,7 @@
   justify-content: center;
 }
 .urcrypto_signin_image_area_container {
-  height: 95%;
-border-top-right-radius:20px ;
-border-bottom-right-radius:20px ;
+  height: 100%;
   width: 100%;
   background-color: var(--button-color);
   display: flex;
@@ -156,7 +165,6 @@ border-bottom-right-radius:20px ;
 .urcrypto_signin_image_area img {
   max-height: 80%;
   max-width: 80%;
-
 }
 .urcrypto_signin_image_area_container :nth-child(2) {
   height: 250px;
@@ -188,7 +196,7 @@ border-bottom-right-radius:20px ;
   height: 200px;
   width: 200px;
   position: absolute;
-  right:37rem;
+  right:34rem;
   top: 3rem;
 }
 

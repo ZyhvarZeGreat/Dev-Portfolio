@@ -8,6 +8,8 @@ import binance from '../../assets/binance logo.png'
 import bitmex from '../../assets/bitmex logo.png'
 import Hero_stats from './Hero_stats'
 import stats_data from './stats_data'
+import {motion} from  'framer-motion'
+import { type } from '@testing-library/user-event/dist/type'
 const Hero = () => {
 
 
@@ -19,7 +21,7 @@ const Hero = () => {
   return (
     <div className="urcrypto_hero">
 <div className='urcrypto_hero_container'>
-  <div className='urcrypto_hero_header'>
+  <motion.div initial={{opacity:0, x:-120}} viewport={{once:true}} whileInView={{opacity:1, x:0,  }} transition={{duration:2,type:'spring',bounce:.4}}   className='urcrypto_hero_header'>
   <div className='urcrypto_hero_header_container'>
 
     <h1> <span> One Platform</span> <br/> all things Crypto </h1>
@@ -29,10 +31,10 @@ const Hero = () => {
       <input type="submit" className="urcrypto_hero_input_submit" value="Get Started" />
   </div>
     </div>
-  </div>
+  </motion.div>
   <div className='urcrypto_hero_image'>
       <div className='urcrypto_hero_image_container'>
-        <img src={Hero_logo} alt='hero img'/>
+        <motion.img initial={{opacity: 0,x:-120}}  viewport={{once:true,amount:'all'}} whileInView={{opacity:1, x:0,  }} transition={{duration:2,type:'spring',bounce:.5,}} src={Hero_logo} alt='hero img'/>
       </div>
     </div>
     <div className='urcrypto_hero_logo_cloud'>
@@ -45,7 +47,7 @@ const Hero = () => {
         </div>
       </div>
       
-      <div className='urcrypto_hero_stats'>
+      <div initial={{opacity:0, x:-120}} whileInView={{opacity:1, x:0,  }} className='urcrypto_hero_stats'>
           {stats}
         </div>
 </div>

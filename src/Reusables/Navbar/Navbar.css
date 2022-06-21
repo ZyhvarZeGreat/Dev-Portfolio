@@ -69,17 +69,14 @@
   font-weight: 600;
 }
 
-@media screen and (max-width: 768px) {
-  .urcrypto_navbar_container {
-    width: 98%;
-  }
-}
-@media screen and (max-width: 600px) {
+
+
+@media screen and (max-width: 900px) {
   .urcrypto_navbar_links {
     display: none;
   }
   .urcrypto_navbar_container {
-    width: 97%;
+    width: 90%;
   }
   .urcrypto_navbar_links {
     display: none;

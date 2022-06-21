@@ -1,0 +1,206 @@
+.urcrypto_signup_page {
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .urcrypto_signup_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 100%;
+  }
+  .urcrypto_signup_text_area {
+    width: 50%;
+    height:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+  }
+  .urcrypto_signup_header {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .urcrypto_signup_header p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    font-size: 1.1rem;
+    font-family: "Inter";
+  }
+  .urcrypto_signup_header a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: "Inter";
+    color: var(--button-color);
+    border: var(--button-color) solid 1px;
+    border-radius: 0.4rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+  }
+  .urcrypto_signup_header img {
+    height: 3rem;
+    width: 12rem;
+  }
+  .urcrypto_sign_in_content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .urcrypto_sign_in_content h1 {
+    font-family: "YukitaSansBold";
+    font-size: var(--heading-1-font-size);
+  }
+  .urcrypto_sign_in_content p {
+    font-family: "Inter";
+    font-size: 1.2rem;
+  }
+  .urcrypto_social_sign_in {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+  }
+  .urcrypto_social_sign_in div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0.4rem;
+    width: 40%;
+    cursor: pointer;
+    border: #e5e5e5 solid 1px;
+  }
+  .urcrypto_social_sign_in div svg  {
+    color: var(--button-color);
+  }
+  
+  .urcrypto_social_sign_in p {
+    font-family: "Inter";
+    font-size: 1.2rem;
+  }
+  .urcrypto_social_sign_in svg {
+    height: 2rem;
+    width: 2rem;
+  }
+  .urcrypto_email_sign_in {
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .urcrypto_email_sign_in input {
+    height: 4rem;
+    width: 25rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.3rem;
+    text-align: left;
+    font-family: "Inter";
+    background-color: #e5e4e4;
+  }
+  .urcrypto_email_sign_in_heading {
+  font-size:1.3rem;
+  }
+  
+  .urcrypto_email_sign_in_features {
+    width: 25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .urcrypto_email_sign_in_features a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Inter";
+  }
+  .urcrypto_email_sign_in button {
+    height: 3rem;
+    width: 20rem;
+    background-color: transparent;
+    border: var(--button-color) solid 1px;
+    border-radius: 0.4rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: "Inter";
+  }
+  .urcrypto_signup_image_area {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .urcrypto_signup_image_area_container {
+    height: 100%;
+
+    width: 100%;
+    background-color: var(--button-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .urcrypto_signup_image_area img {
+    max-height: 80%;
+    max-width: 80%;
+  
+  }
+  #home{
+    border: none;
+  }
+  .urcrypto_signup_image_area_container :nth-child(2) {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    align-self: flex-start;
+    justify-self: flex-end;
+    left: 2rem;
+    top: 1rem;
+  }
+  .urcrypto_signup_image_area_container :nth-child(3) {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    align-self: flex-end;
+    left:35rem;
+    top: 30rem;
+    opacity: 0.9;
+  }
+  .urcrypto_signup_image_area_container :nth-child(4) {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    align-self: flex-end;
+    left:4rem;
+    bottom: 3rem;
+  }
+  .urcrypto_signup_image_area_container :nth-child(5) {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left:34rem;
+    top: 3rem;
+  }
+  
+  
+  

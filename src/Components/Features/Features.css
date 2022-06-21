@@ -61,8 +61,6 @@
   justify-content: center;
   width: 100%;
   border-radius: 1rem;
-
-
 }
 .section_1 .urcrypto_features_section_image_area .urcrypto_features_phone img {
   height: 30rem;
@@ -161,7 +159,7 @@
   justify-content: center;
 }
 .urcrypto_features_section_text_area h1 {
-  font-size: var(--heading-1-font-size);
+  font-size: clamp(2rem,5vw,var(--heading-1-font-size));
   width: 90%;
   font-family: "YukitaSansBold";
   text-transform: capitalize;
@@ -179,4 +177,48 @@
   text-align: start;
   text-transform: capitalize;
   color: #626262;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .section_1 {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: antiquewhite;
+  }
+  .section_1 .urcrypto_features_section_image_area{
+    background-color: aqua;
+  }
+  .section_1 .urcrypto_features_section_image_area .urcrypto_features_info{
+    left: 12rem;
+  }
+  .section_2 .urcrypto_features_section_image_area{
+    background-color: blue;
+  }
+  .section_2 .urcrypto_features_section_image_area .urcrypto_features_info{
+    left:37rem;
+margin-top: -3rem;
+  }
+  .section_3 .urcrypto_features_section_image_area{
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+  }
+  .section_3 .urcrypto_features_section_image_area .urcrypto_features_phone{
+    align-self: center;  
+  }
+  .section_3 .urcrypto_features_section_image_area .urcrypto_features_info{
+
+  }
+  .section_2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section_3 {
+    flex-direction: column;
+    justify-content: center;
+
+  }
 }

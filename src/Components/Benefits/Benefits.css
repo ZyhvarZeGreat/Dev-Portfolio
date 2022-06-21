@@ -15,66 +15,66 @@
 }
 .urcrypto_benefits_text_area {
   height: 100%;
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   margin: 0 2rem;
   align-items: center;
-  justify-content: space-around
+  justify-content: space-around;
 }
-.urcrypto_benefits_image_area{
-    width: 60%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.urcrypto_benefits_image_area {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.urcrypto_benefits_image_area_container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    height: 90%;
-    background-color: var(--features-section-1-background-color);
+.urcrypto_benefits_image_area_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 90%;
+  background-color: var(--features-section-1-background-color);
 }
-.urcrypto_benefits_image_left{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+.urcrypto_benefits_image_left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-.urcrypto_benefits_image_right{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+.urcrypto_benefits_image_right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-.urcrypto_benefits_image_left :nth-child(1){
-width: 16rem;
-height: 25.5rem;
+.urcrypto_benefits_image_left :nth-child(1) {
+  width: 16rem;
+  height: 25.5rem;
 }
-.urcrypto_benefits_image_left :nth-child(2){
-    width: 16rem;
-    height: 25rem;
+.urcrypto_benefits_image_left :nth-child(2) {
+  width: 16rem;
+  height: 25rem;
 }
-.urcrypto_benefits_image_right :nth-child(1){
-    width: 15.8rem;
-    height: 5rem;
+.urcrypto_benefits_image_right :nth-child(1) {
+  width: 15.8rem;
+  height: 5rem;
 }
-.urcrypto_benefits_image_right :nth-child(2){
-    width: 15.8rem;
-    height: 33rem;
+.urcrypto_benefits_image_right :nth-child(2) {
+  width: 15.8rem;
+  height: 33rem;
 }
-.urcrypto_benefits_image_right :nth-child(3){
-    width: 15.8rem;
-    height: 9rem;
+.urcrypto_benefits_image_right :nth-child(3) {
+  width: 15.8rem;
+  height: 9rem;
 }
 
 .urcrypto_benefits_text_area h1 {
-  font-size: var(--heading-1-font-size);
+  font-size: clamp(0.9rem, 9vw, var(--heading-1-font-size));
   font-family: "YukitaSansBold";
   text-transform: capitalize;
   text-align: start;
@@ -91,7 +91,7 @@ height: 25.5rem;
 .urcrypto_benefits_description_container {
   width: 100%;
   display: flex;
-  border-bottom: #E3E3E3 solid 1px;
+  border-bottom: #e3e3e3 solid 1px;
   flex-direction: row;
 }
 .urcrypto_benefits_description_text {
@@ -112,12 +112,13 @@ height: 25.5rem;
   justify-content: flex-start;
   margin-top: -20px;
 }
-.urcrypto_benefits_description_bullet  h4{
-    font-size: 1.5rem;
-    color: var(--features-number-font-color);
+.urcrypto_benefits_description_bullet h4 {
+  font-size: 1.5rem;
+  color: var(--features-number-font-color);
 }
 .urcrypto_benefits_description_text h2 {
   font-family: "YukitaSansBold";
+  font-size: clamp(5rem, 10vw 1.5rem);
   text-transform: capitalize;
 }
 .urcrypto_benefits_description_text p {
@@ -125,4 +126,114 @@ height: 25.5rem;
   text-transform: capitalize;
   font-weight: 400;
   text-align: start;
+}
+
+@media screen and (max-width: 1024px) {
+  .urcrypto_benefits {
+    height: 110rem;
+    width: 100%;
+  }
+  .urcrypto_benefits_container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .urcrypto_benefits_text_area {
+    width: 95%;
+    margin-bottom: 2rem;
+  }
+  .urcrypto_benefits_image_area {
+    width: 100%;
+  }
+  .urcrypto_benefits_image_area_container {
+    width: 90%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .urcrypto_benefits_image_area {
+    height: 50rem;
+  }
+.urcrypto_benefits_image_area_container {
+    width: 100%;
+    height: 100%;
+  }
+  .urcrypto_benefits_image_left{
+    width: 50%;
+  }
+  .urcrypto_benefits_image_right{
+    width: 50%;
+
+  }
+  
+  .urcrypto_benefits_image_left :nth-child(1) {
+ width: 13rem ;
+ height: 45%;
+
+  }
+  .urcrypto_benefits_image_left :nth-child(2) {
+    width: 13rem ;
+    height: 45%;
+   
+  }
+  .urcrypto_benefits_image_right :nth-child(1) {
+width: 12.5rem;
+height: 10%;
+  }
+  .urcrypto_benefits_image_right :nth-child(2) {
+width: 12.5rem;
+height: 60%;
+  }
+  .urcrypto_benefits_image_right :nth-child(3) {
+    width: 12.5rem;
+    height: 20%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .urcrypto_benefits_image_area {
+    height: 50rem;
+  }
+  .urcrypto_benefits_text_area h1 {
+    text-align: center;
+    width: 100%;
+  }
+  .urcrypto_benefits_image_area_container {
+    width: 100%;
+    height: 100%;
+  }
+  .urcrypto_benefits_description_text h2 {
+    background-color: aliceblue;
+    width: 80%;
+    text-align: start;
+    font-size: 1.2rem;
+  }
+  .urcrypto_benefits_image_left {
+    background-color: blue;
+    width: 50%;
+  }
+    .urcrypto_benefits_image_right {
+background-color: beige;
+width: 50%;
+    }
+    .urcrypto_benefits_image_left :nth-child(1) {
+      height: 16.5rem;
+      width: 11rem;
+
+    }
+    .urcrypto_benefits_image_left :nth-child(2) {
+      height: 16rem;
+      width: 11rem;
+    }
+    .urcrypto_benefits_image_right :nth-child(1) {
+      height:3rem;
+      width: 10rem;
+    }
+    .urcrypto_benefits_image_right :nth-child(2) {
+     width: 11rem;
+     height: 22rem;
+    }
+    .urcrypto_benefits_image_right :nth-child(3) {
+      height:5rem;
+      width: 10rem;
+    }
+  
 }
