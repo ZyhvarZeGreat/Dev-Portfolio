@@ -95,7 +95,7 @@ font-size: 1.2rem;
         width: 100%;
       
     }
-    @media screen and (max-width:700px) {
+    @media screen and (max-width:768px) {
         .urcrypto_footer{
             height:80rem;
             width: 98%;
@@ -110,6 +110,8 @@ font-size: 1.2rem;
         }
         .urcrypto_footer_logo img{
             align-self: center;
+            height: 4rem;
+            width: 15rem;
         }
         .urcrypto_footer_logo_social_links{
             width: 90%;}

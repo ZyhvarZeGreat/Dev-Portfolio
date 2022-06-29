@@ -1,5 +1,6 @@
 import React from 'react'
 import './Benefits.css'
+import { motion } from 'framer-motion'
 import Bottom_Left from '../../assets/Bottom left.png'
 import Bottom_Right from '../../assets/Bottom right.png'
 import Top_Left from '../../assets/Top left.png'
@@ -28,13 +29,13 @@ const Benefits = () => {
     <div className='urcrypto_benefits_image_area'>
       <div className='urcrypto_benefits_image_area_container'>
       <div className='urcrypto_benefits_image_left'>
-      <img src={Top_Left} alt=""/>
-      <img src={Bottom_Left} alt=""/>
+      <motion.img initial={{x:-50 ,opacity:0}} viewport={{once:true, amount:'some'}} whileInView ={{ x:0, opacity:1}} transition={{duration:.9, type:'spring'}} src={Top_Left} alt=""/>
+      <motion.img initial={{x:-50 ,opacity:0}} viewport={{once:true, amount:'some'}} whileInView ={{ x:0, opacity:1}} transition={{duration:1.6, type:'spring'}} src={Bottom_Left} alt=""/>
       </div>
       <div className='urcrypto_benefits_image_right'>
-      <img src={Top_Right} alt=""/>
-      <img src={Middle_Right} alt=""/>
-      <img src={Bottom_Right} alt=""/>
+      <motion.img initial={{y:-50 ,opacity:0}} viewport={{once:true, amount:'all'}} whileInView ={{y:0, opacity:1}} transition={{duration:.9, type:'spring'}} src={Top_Right} alt=""/>
+<motion.img initial={{x:-50 ,opacity:0}} viewport={{once:true, amount:'some'}} whileInView ={{ x:0, opacity:1}} transition={{duration:.9, type:'spring'}} src={Middle_Right} alt=""/>
+      <motion.img initial={{y:-50 ,opacity:0}} viewport={{once:true, amount:'all'}} whileInView ={{y:0,opacity:1}} transition={{duration:.9, type:'spring'}} src={Bottom_Right} alt=""/>
       </div>
         
        

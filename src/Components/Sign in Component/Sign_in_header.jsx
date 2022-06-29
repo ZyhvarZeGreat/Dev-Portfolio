@@ -8,7 +8,11 @@ const Sign_in_header = () => {
 <img src={Logo} alt='header logo' />
 </Link>
   
-  <p>Don't have an account? <Link to="/Signup"> Sign Up!</Link> </p>
+  <div className = 'urcrypto_signin_header_link'>
+  <p>Don't have an account?</p>
+  <Link to="/Signup"> Sign Up!</Link> 
+  </div>
+
   
 </div>
   )

@@ -201,17 +201,14 @@ height: 60%;
     height: 100%;
   }
   .urcrypto_benefits_description_text h2 {
-    background-color: aliceblue;
     width: 80%;
     text-align: start;
     font-size: 1.2rem;
   }
   .urcrypto_benefits_image_left {
-    background-color: blue;
     width: 50%;
   }
     .urcrypto_benefits_image_right {
-background-color: beige;
 width: 50%;
     }
     .urcrypto_benefits_image_left :nth-child(1) {

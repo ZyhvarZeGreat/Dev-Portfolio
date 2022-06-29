@@ -69,7 +69,9 @@
   font-weight: 600;
 }
 
-
+.urcrypto_mobile_navbar {
+  display: none;
+}
 
 @media screen and (max-width: 900px) {
   .urcrypto_navbar_links {
@@ -97,4 +99,93 @@
     height: 1.8rem;
     width: 1.8rem;
   }
+  .urcrypto_mobile_navbar_skew{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+  }
+  .urcrypto_mobile_navbar{
+    display: flex;
+    background-color: var(--button-color);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .urcrypto_mobile_navbar_container{
+    height: 100%;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .urcrypto_mobile_navbar_logo {
+    height: max-content;
+    width: max-content;
+    height: 8%;
+  }
+  .urcrypto_mobile_navbar_logo img {
+    height: 3.7rem;
+    width: auto;
+  }
+  .urcrypto_mobile_navbar_links{
+    height: 70%;
+  width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .urcrypto_mobile_navbar_links a{
+    font-size: 2.7em;
+    color: var(--main-background-color);
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+  }
+  .urcrypto_mobile_navbar_cta{
+width: 95%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+  }
+
+  .urcrypto_mobile_navbar_cta_signin{
+    height: 3rem;
+    background-color: var(--main-background-color);
+    width: 45%;
+    font-weight: 400;
+    color: var(--button-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+    font-family: 'Inter';
+    border-radius: .3rem;
+  }
+  .urcrypto_mobile_navbar_cta_signup{
+    height: 3rem;
+    background-color: var(--main-background-color);
+    border: 1px solid var(--button-color);
+    background-color: transparent;
+    color: var(--main-background-color);
+    width: 45%;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-family: 'Inter';
+    border-radius: .3rem;
+  }
+ 
 }
+
+

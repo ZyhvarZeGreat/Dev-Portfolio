@@ -9,12 +9,12 @@ const Sign_in_content = () => {
     <p>Login to your account</p>
     </div>
  <div className='urcrypto_social_sign_in'>
- <div>  
- <UilGoogle/> 
+ <div className='urcrypto_social_sign_in_icons'>  
+ <UilGoogle fontSize = '2rem'/> 
  <p>Google</p>
  </div>
-<div> 
-<UilFacebook/>
+<div className='urcrypto_social_sign_in_icons'> 
+<UilFacebook fontSize = '2rem'/>
 <p>Facebook</p>
  </div>
  </div>

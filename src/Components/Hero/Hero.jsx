@@ -34,7 +34,7 @@ const Hero = () => {
   </motion.div>
   <div className='urcrypto_hero_image'>
       <div className='urcrypto_hero_image_container'>
-        <motion.img initial={{opacity: 0,x:-120}}  viewport={{once:true,amount:'all'}} whileInView={{opacity:1, x:0,  }} transition={{duration:2,type:'spring',bounce:.5,}} src={Hero_logo} alt='hero img'/>
+        <motion.img initial={{opacity: 0,x:-120}}  viewport={{once:true,amount:'some'}} whileInView={{opacity:1, x:0,  }} transition={{duration:2,type:'spring',bounce:.5,}} src={Hero_logo} alt='hero img'/>
       </div>
     </div>
     <div className='urcrypto_hero_logo_cloud'>

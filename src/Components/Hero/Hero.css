@@ -27,11 +27,13 @@
 .urcrypto_hero_header h1 {
   font-size: var(--hero-header-font-size);
   font-family: "YukitaSansBold", serif;
+  text-align: center;
 }
 .urcrypto_hero_header p {
   font-size: 1.2rem;
   font-family: "Inter";
   margin-top: -1rem;
+  text-align: center;
 }
 .urcrypto_hero_header_container {
   height: 90%;
@@ -186,7 +188,6 @@
     width: 90%;
     height: 90%;
     display: flex;
-    background-color: aqua;
     align-items: center;
     justify-content: center;
   }
@@ -195,7 +196,6 @@
     height: 29rem;
   }
   .urcrypto_hero_logo_cloud_container {
-    background-color: aqua;
     width: 100%;
   }
   .urcrypto_hero_logo_cloud {
@@ -252,6 +252,7 @@
   }
   .urcrypto_hero_header h1 {
     font-size: 3.6rem;
+    text-align: center;
   }
   .urcrypto_hero_container {
     justify-content: space-around;
