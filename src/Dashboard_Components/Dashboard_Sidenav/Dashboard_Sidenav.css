@@ -22,6 +22,10 @@
     justify-content: center;
     background-color: aliceblue;
 }
+.urcrypto_dashboard_sidenav_header img{
+height: 3rem;
+width: auto;
+}
 .urcrypto_dashboard_sidenav_links_container{
     height: 33rem;
     background-color: aquamarine;

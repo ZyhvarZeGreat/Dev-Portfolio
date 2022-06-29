@@ -4,7 +4,7 @@ import {UilCreateDashboard,  UilEstate,UilAnalytics, UilMoneybagAlt,UilWallet,Ui
 import Side_nav_link from './Side_nav_link'
 import {useIsSmall} from '../../hooks/useMediaQuery'
 import { motion } from 'framer-motion'
-
+import Logo from '../../assets/dashboardLogo.png'
 let sidenav_links = [
   {
     id:"1",
@@ -84,7 +84,7 @@ slideout:{
     <motion.div variants={side_nav_variants} initial={"slidein"} animate={ "slideout"} className='urcrypto_dashboard_sidenav'>
     <div className= 'urcrypto_dashboard_sidenav_container'>
       <div className= 'urcrypto_dashboard_sidenav_header'>
-        <img src = '' alt= 'sidenav logo'/>
+        <img src = {Logo} alt= 'sidenav logo'/>
       </div>
       <div className= 'urcrypto_dashboard_sidenav_links_container'>
 {sidenav_items}
