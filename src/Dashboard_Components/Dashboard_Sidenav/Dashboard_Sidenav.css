@@ -14,20 +14,33 @@
     align-items: center;
     justify-content: space-between;
 }
+.urcrypto_dashboard_sidenav_container button{
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+.urcrypto_dashboard_sidenav_header svg{
+display: none;
+}
+.urcrypto_dashboard_sidenav_container button svg{
+height: 2rem;
+align-self: center;
+width: auto;
+}
 .urcrypto_dashboard_sidenav_header{
     height: 10%;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: aliceblue;
 }
 .urcrypto_dashboard_sidenav_header img{
-height: 3rem;
+height: 2rem;
 width: auto;
 }
 .urcrypto_dashboard_sidenav_links_container{
-    height: 33rem;
+    height: 90%;
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
@@ -35,11 +48,11 @@ width: auto;
     justify-content: space-around;
     align-self: center;
     width: 100%;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
     
 }
 .urcrypto_dashboard_sidenav_links_container a {
-    width: 13rem;
+    width: 90%;
     background-color: antiquewhite;
     display: flex;
     align-items: center;
@@ -61,12 +74,34 @@ width: auto;
     width: 1.5rem;
     color:#A9A9A9;
 }
-
-
-
-
-
 @media screen and (max-width: 600px){
-    .urcrypto_dashboard_sidenav{display: none;}
+    .urcrypto_dashboard_sidenav{
+        width: 14rem;
+    }
+    .urcrypto_dashboard_sidenav_header svg{
+        display: block;
+        }
+    .urcrypto_dashboard_sidenav{
+        position: fixed;
+    }
+    .urcrypto_dashboard_sidenav button{
+        position: relative;
+        display: block;
+        left: 8rem;
+    }
+    .urcrypto_dashboard_sidenav_links_container a svg {
+        height: 2rem;
+        width: 2rem;
+        color:#A9A9A9;
+    }
 }
-    
+@media screen and (max-width: 400px){
+    .urcrypto_dashboard_sidenav{
+        width: 13rem;
+    }
+}
+
+
+
+
+

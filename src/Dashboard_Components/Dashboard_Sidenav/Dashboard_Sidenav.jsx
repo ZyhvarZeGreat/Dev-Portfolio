@@ -57,22 +57,19 @@ let sidenav_links = [
 ]
 
 
-const Dashboard_Sidenav = () => {
-  const [opened, setopened] = useState(false)
+const Dashboard_Sidenav = ({}) => {
+  const[opened,setOpened] = useState(false)
   const isSmall = useIsSmall()  
 
-  const side_nav_variants = isSmall ? {
-slidein:{
-  opacity:0,
-  x:0,
-},
-slideout:{
-  opacity:1,
-  x:-50
-}
-  }
-  :{
-
+  const side_nav_variants = {
+    slidein:{
+      opapcity:0,
+      x:-300
+    },
+    slideout:{
+      opacity:1,
+      x:0
+    }
   }
   const sidenav_items = sidenav_links.map(({id,to,link,icon})=>{
     return(
@@ -81,14 +78,20 @@ slideout:{
 
   })
   return (
-    <motion.div variants={side_nav_variants} initial={"slidein"} animate={ "slideout"} className='urcrypto_dashboard_sidenav'>
+    <motion.div variants={side_nav_variants} initial={"slidein"}  animate={isSmall && opened ? "slidein" : "slideout"} className='urcrypto_dashboard_sidenav'>
+   
     <div className= 'urcrypto_dashboard_sidenav_container'>
       <div className= 'urcrypto_dashboard_sidenav_header'>
-        <img src = {Logo} alt= 'sidenav logo'/>
+         <img src = {Logo} alt= 'sidenav logo'/> 
+         <button onClick={()=> setOpened(!opened)}>
+<UilCreateDashboard/>
+    </button>
       </div>
-      <div className= 'urcrypto_dashboard_sidenav_links_container'>
+         <div className= 'urcrypto_dashboard_sidenav_links_container'>
 {sidenav_items}
         </div>
+      
+  
     </div>
     </motion.div>
   )
