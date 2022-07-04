@@ -2,7 +2,12 @@ import React from 'react'
 
 const Exchange = () => {
   return (
-    <div>Exchange</div>
+    
+    <div>
+  <div>
+    <p>abeg work</p>
+  </div>
+    </div>
   )
 }
 

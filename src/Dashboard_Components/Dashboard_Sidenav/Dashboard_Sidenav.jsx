@@ -8,49 +8,49 @@ import Logo from '../../assets/dashboardLogo.png'
 let sidenav_links = [
   {
     id:"1",
-    to: "/Dashboard",
+    to: "Home",
     link:"Dashboard",
     icon: <UilEstate/>
   },
   {
     id:"2",
-    to: "/Analytics",
+    to: "Analytics",
     link:"Analytics",
     icon: <UilAnalytics/>
   },
   {
     id:"3",
-    to: "/My Portfolio",
+    to: "Portfolio",
     link:"My Portfolio",
     icon: <UilMoneybagAlt/>
   },
   {
     id:"4",
-    to: "/My Wallets",
+    to: "Wallets",
     link:"My Wallets",
     icon: <UilWallet/>
   },
   {
     id:"5",
-    to: "/Exchanges",
+    to: "Exchanges",
     link:"Exchanges",
     icon: <UilExchange/>
   },
   {
     id:"6",
-    to: "/Setting",
+    to: "Settings",
     link:"Settings",
     icon: <UilSlidersV/>
   },
   {
     id:"7",
-    to: "/Help",
+    to: "Help",
     link:"Help",
     icon: <UilInfo/>
   },
   {
     id:"8",
-    to: "/Log out",
+    to: "/",
     link:"Log out",
     icon: <UilSignout/>
   },

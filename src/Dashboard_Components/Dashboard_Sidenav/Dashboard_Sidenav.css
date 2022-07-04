@@ -8,7 +8,6 @@
 .urcrypto_dashboard_sidenav_container{
     height: 100%;
     width: 100%;
-    background-color: blueviolet;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,16 +31,16 @@ width: auto;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-color: aliceblue;
+    justify-content: flex-start;
 }
 .urcrypto_dashboard_sidenav_header img{
 height: 2rem;
+
+margin-left: 2.8rem;
 width: auto;
 }
 .urcrypto_dashboard_sidenav_links_container{
     height: 90%;
-    background-color: aquamarine;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,25 +48,26 @@ width: auto;
     align-self: center;
     width: 100%;
     margin-bottom: 8rem;
-    
 }
 .urcrypto_dashboard_sidenav_links_container a {
-    width: 90%;
-    background-color: antiquewhite;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     text-decoration: none;
+
 }
 .urcrypto_dashboard_sidenav_links_container a p {
     width: 70%;
     display: flex;
    text-align: left;
-   background-color: azure;
     font-family: 'Inter';
     font-size: 1.1rem;
     text-align: center;
     color: #A9A9A9;
+}
+.urcrypto_dashboard_sidenav_links_container a  :active{
+    color: var(--button-color);
 }
 .urcrypto_dashboard_sidenav_links_container a svg {
     height: 1.5rem;
@@ -77,6 +77,23 @@ width: auto;
 @media screen and (max-width: 600px){
     .urcrypto_dashboard_sidenav{
         width: 14rem;
+        background-color: var(--button-color);
+    }
+    .urcrypto_dashboard_sidenav_links_container a {
+        width: 100%;
+        justify-content: center;
+    }
+    .urcrypto_dashboard_sidenav_links_container a p{
+        width: 53%;
+        margin-left: 1rem;
+        
+    }
+    .urcrypto_dashboard_sidenav_links_container a p {
+        color: var(--main-background-color);
+    }
+    .urcrypto_dashboard_sidenav_links_container a svg {
+        color: var(--main-background-color);
+
     }
     .urcrypto_dashboard_sidenav_header svg{
         display: block;
@@ -92,13 +109,14 @@ width: auto;
     .urcrypto_dashboard_sidenav_links_container a svg {
         height: 2rem;
         width: 2rem;
-        color:#A9A9A9;
+        color:var(--main-background-color);
     }
 }
 @media screen and (max-width: 400px){
     .urcrypto_dashboard_sidenav{
-        width: 13rem;
+        width: 13rem;  
     }
+    
 }
 
 

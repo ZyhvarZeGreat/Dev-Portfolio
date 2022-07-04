@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link,Outlet } from 'react-router-dom'
 import {useIsSmall} from '../../hooks/useMediaQuery'
 
 const Side_nav_link = (props) => {

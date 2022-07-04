@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .urcrypto_dashboard_header_container{
     width: 90%;
@@ -24,7 +25,6 @@
     font-size: .8rem;
 }
 .urcrypto_dashboard_header_actions{
-    background-color: aliceblue;
     width: 30rem;
     display: flex;
     align-items: center;
@@ -59,6 +59,7 @@ width: auto;
 .urcrypto_dashboard_header_actions button{
 background-color: transparent;
 border: none;
+cursor: pointer;
 
 }
 .urcrypto_dashboard_header_actions button svg{
@@ -71,8 +72,35 @@ border: none;
     align-items: center;
     justify-content: center;
     width: 7rem;
-    background-color: aqua;
+
 }
+.urcrypto_dashboard_header_actions_dropdown{
+    position: absolute;
+    background-color:var(--main-background-color);
+    border: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 15rem;
+    top: 5rem;
+    right: 4rem;
+    height: 13rem;
+    border-radius:10px;
+}
+.urcrypto_dashboard_header_dropdown_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 13rem;
+}
+.urcrypto_dashboard_header_dropdown_items p{
+    font-family: 'Inter' Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    width: 40%;
+    text-align: right;
+ }
 
 @media screen and(max-width: 600px) {
     .urcrypto_dashboard_header_container{
