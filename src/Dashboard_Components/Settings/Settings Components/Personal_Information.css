@@ -1,0 +1,245 @@
+.urcrypto_personal_information{
+    width: 90%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-y: scroll;
+}
+.urcrypto_personal_information_container{
+    width: 100%;
+    overflow-y: scroll;
+}
+.urcrypto_personal_information ::-webkit-scrollbar{
+    display: none;
+}
+.urcrypto_personal_information_container::-webkit-scrollbar{
+    display: none;
+}
+.urcrypto_personal_information {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .urcrypto_personal_information_container{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.urcrypto_personal_information_header{
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+.urcrypto_personal_information_header h1{
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.urcrypto_personal_information_content{
+    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+}
+.urcrypto_personal_information_content_header h3{
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+.urcrypto_personal_information_content_header p{
+    font-weight: 400;
+    color: #818181;
+}
+.urcrypto_personal_information_content_header{
+    width: 100%;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+
+}.urcrypto_personal_information_content_inputs{
+    width: 100%;
+}
+.urcrypto_personal_information_content_name_inputs{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 7rem;
+    width: 85%;
+}
+.urcrypto_personal_information_content_first_name_input {
+margin-left: 1rem;
+}
+   
+.urcrypto_personal_information_content_first_name_input h4{
+    font-family: 'Inter' Arial, Helvetica, sans-serif;
+    font-weight: 600;
+} 
+.urcrypto_personal_information_content_last_name_input h4{
+    font-family: 'Inter' Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.urcrypto_personal_information_content_first_name_input input {
+    height: 2.5rem;
+    width: 18rem;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Inter'Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+.urcrypto_personal_information_content_last_name_input input {
+    width: 18rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Inter'Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+.urcrypto_personal_information_content_email_input h4{
+    font-family: 'Inter' Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.urcrypto_personal_information_content_email_input{
+    margin-left:1rem;
+}
+.urcrypto_personal_information_content_email_input input {
+    height: 2.5rem;
+    width: 18rem;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Inter'Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.urcrypto_personal_information_content_description_input {
+    height: 11rem;
+    margin-left: 1rem;
+}
+.urcrypto_personal_information_content_description_input h4 {
+    font-family: 'Inter' Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.urcrypto_personal_information_content_description_input p {
+    font-weight: 400;
+    color: #818181;
+}
+.urcrypto_personal_information_content_description_input input{
+height: 5rem;
+border-radius: 3px;
+width:85%;
+border: none;
+background-color: #f4f4f4;
+}
+.urcrypto_personal_information_personal_information_header h3{
+font-size: 1.5rem;
+font-family: 'Inter',Arial, Helvetica, sans-serif;
+}
+.urcrypto_personal_information_personal_information_header p{
+    font-size: 1.1rem;
+    color: #818181;
+    text-transform: capitalize;
+}
+.urcrypto_personal_information_content_personal_information_input{
+    width: 90%;
+  
+}
+.urcrypto_personal_information_personal_information_input_container {
+    display: grid;
+    width: 100%;
+    place-items: start;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+.urcrypto_personal_information_content_number_input{
+grid-area: 1/2;
+width: 18rem;
+}
+.urcrypto_personal_information_content_language_input{
+    grid-area: 2/2;
+}
+
+.urcrypto_personal_information_content_country_input{
+    grid-area: 2/1;
+    margin-left:1rem;
+}
+
+.urcrypto_personal_information_content_email_input{
+    grid-area: 1/1;
+}
+.urcrypto_personal_information_content_number_input h4{
+    font-family: 'Inter' Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.urcrypto_personal_information_content_language_input h4{
+    font-family: 'Inter' Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    
+}
+.urcrypto_personal_information_content_country_input h4{
+    font-family: 'Inter' Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.urcrypto_personal_information_content_number_input input {
+    height: 2.5rem;
+    width: 18rem;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Inter'Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+.urcrypto_personal_information_content_language_input input {
+    height: 2.5rem;
+    width: 18rem;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Inter'Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+.urcrypto_personal_information_content_country_input input {
+    height: 2.5rem;
+    width: 18rem;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Inter'Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.urcrypto_personal_information_save_buttons{
+    height: 12rem;
+    display: flex;
+    margin-top: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+    border-top:1px solid  #818181;;
+}
+.urcrypto_personal_information_save_buttons_container{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.urcrypto_personal_information_save_btn{
+height: 2.5rem;
+width: 6rem;
+margin-right: 2rem;
+font-family: 'Inter';
+background-color:#f4f4f4 ;
+border:none;
+border-radius: 5px;
+font-size: 1rem;
+cursor: pointer;
+}
+.urcrypto_personal_information_cancel_btn{
+height: 2.5rem;
+width: 6rem;
+font-size: 1rem;
+font-family: 'Inter';
+color: var(--main-background-color);
+background-color: var(--button-color);
+border:none;
+border-radius: 5px;
+cursor: pointer;
+}

@@ -1,0 +1,78 @@
+.urcrypto_dashboard_settings{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 2fr;
+    grid-template-rows:  1fr 1fr 1fr ;
+    grid-template-areas: "nav items items"
+                         "nav items items"
+                         "nav items items"
+    ;
+}
+.urcrypto_dashboard_settings_nav{
+    grid-area: nav;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.urcrypto_dashboard_settings_nav_container{
+    height: 60%;
+    width: 90%;
+    background-color: blueviolet;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.urcrypto_dashboard_settings_nav_container h1{
+    font-family: 'Inter' Arial, Helvetica, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.urcrypto_dashboard_settings_nav_content{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.urcrypto_dashboard_settings_nav_link_container {
+    height: 22%;
+    width: 100%;
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.urcrypto_dashboard_settings_nav_link_container a{
+    text-decoration: none;
+    width:100%;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.urcrypto_dashboard_settings_nav_link_container a p{ 
+    font-family: 'Inter';
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 50%;
+    font-size: 1.04rem;
+    text-align: left;
+}
+.urcrypto_dashboard_settings_items {
+    grid-area: items;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

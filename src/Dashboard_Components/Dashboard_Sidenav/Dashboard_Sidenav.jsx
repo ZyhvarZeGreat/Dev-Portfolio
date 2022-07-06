@@ -38,7 +38,7 @@ let sidenav_links = [
   },
   {
     id:"6",
-    to: "Settings",
+    to: "Settings/Appearances",
     link:"Settings",
     icon: <UilSlidersV/>
   },
@@ -73,7 +73,7 @@ const Dashboard_Sidenav = ({}) => {
   }
   const sidenav_items = sidenav_links.map(({id,to,link,icon})=>{
     return(
-<Side_nav_link to = {to} id = {id} link = {link} icon = {icon} />
+<Side_nav_link key={id} to = {to} id = {id} link = {link} icon = {icon} />
     )
 
   })

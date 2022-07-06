@@ -6,6 +6,7 @@ import { Bar} from 'react-chartjs-2';
 
 import Dashboard_Home_Charts from './Dashboard_Home_Charts'
 import Dashboard_Home_Transactions from './Dashboard_Home_Transactions'
+import DynamicChart from './DynamicChart';
 const Dashboard_Home = () => {
   const [chartData, setChartData] = useState({});
     const home_statistics_cards_data = [
@@ -51,7 +52,6 @@ const Dashboard_Home = () => {
     {home_statistics_cards_item}
     </div>
   <div className='urcrypto_dashboard_home_statistics_charts'>
-
 
   </div>
 
