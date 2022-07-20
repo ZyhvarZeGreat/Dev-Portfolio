@@ -22,7 +22,7 @@ let settings_content_data = [
         id:"4",
         to:"Billing",
         link:"Billing Information",
-        icon:<UilEuroCircle/>
+        icon:<UilEuroCircle/> 
     },
 
 ]

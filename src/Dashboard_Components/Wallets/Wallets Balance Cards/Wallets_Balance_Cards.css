@@ -1,0 +1,14 @@
+.urcrypto_dashboard_wallets_balance_cards_container{
+    display: flex;
+    width: 98%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.urcrypto_dashboard_wallets_balance_cards{
+    display: flex;
+height: 15rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}

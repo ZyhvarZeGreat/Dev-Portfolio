@@ -1,0 +1,51 @@
+.urcrypto_dashboard_wallet_fiat_balance_list_column{
+    display: flex;
+    height: 20rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.urcrypto_dashboard_wallet_fiat_balance_list_column_header{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.urcrypto_dashboard_wallet_fiat_balance_list_column_header h3{
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #666363;
+}
+.urcrypto_dashboard_wallet_fiat_balance_list_column_content{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+
+.urcrypto_dashboard_wallet_fiat_balance_list_column_content_item{
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 3rem;
+    justify-content: space-around;
+    border-top: 1px solid #66636343;
+
+}
+
+.urcrypto_dashboard_wallet_fiat_balance_list_column_content p{
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}

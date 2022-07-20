@@ -1,6 +1,468 @@
-.urcrypto_home_dashboard_transactions{
+.urcrypto_home_dashboard_transactions_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.urcrypto_dashboard_home_transactions_container {
+    display: flex;
+    width: 100%;
+    height: 70rem;
+    overflow-y: scroll;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+
+.urcrypto_dashboard_home_transactions_container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.urcrypto_dashboard_home_transactions_container::--webkit-scrollbar {
+    display: none;
+}
+.urcrypto_dashboard_home_transactions_trade_card {
+    display: flex;
+    align-items: flex-start;
+    height: 25rem;
+    margin-top: rem;
     justify-content: space-around;
+    flex-direction: column;
+    width: 25rem;
+    gap: .2rem;
+    border-radius: 1rem;
+    border: 1px solid #e5e5e5;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_header {
+    width: 100%;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_header_buy {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 3rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_header_sell {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 3rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_crypto_trade {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_crypto_info {
+    width: 100%;
+    display: flex;
+    height: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_crypto_info :nth-child(1) {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: #e5e5e5;
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_crypto_info :nth-child(2) {
+    margin-top: -.5rem;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+
+
+.urcrypto_dashboard_home_transactions_trade_card_header button p {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: var(--button-color);
+    font-size: 1.2rem;
+    font-weight: 600
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_crypto_trade_switch_button {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    border: none;
+    top: 20.5rem;
+    border-radius: 50%;
+    border: 1px #e5e5e5 solid;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+        rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    background-color: var(--main-background-color);
+
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_crypto_trade_switch_button svg {
+    color: var(--button-color);
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_crypto_trade {
+    gap: 1.1rem;
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_crypto_trade_button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_crypto_trade_button button {
+    cursor: pointer;
+    width: 90%;
+    height: 3.3rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: .3rem;
+    justify-content: center;
+    background-color: var(--button-color);
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_crypto_trade_button button p {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    color: var(--main-background-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_crypto_trade_form {
+    width: 95%;
+    border-radius: .3rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e5e5e5;
+    background-color: var(--main-background-color);
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_crypto_trade_form input {
+    height: 3rem;
+    width: 60%;
+
+    border: none;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_crypto_trade_form button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 35%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_crypto_trade_form button img {
+    height: 2rem;
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_crypto_trade_form button p {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: clamp(.7rem, 15vw, 1.1rem);
+
+    align-self: center;
+    font-weight: 600;
+}
+
+.urcrypto_dashboard_home_transactions_trade_card_crypto_trade_form button svg {
+    height: 1.7rem;
+    width: auto;
+}
+
+.urcrypto_dashboard_home_transactions_transfer_card {
+    display: flex;
+    width: 100%;
+    height: 18rem;
+    gap: .2rem;
+    width: 25rem;
+    background-color: var(--main-background-color);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #e5e5e5;
+    border-radius: .5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.urcrypto_dashboard_home_transactions_transfer_card_container {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.urcrypto_dashboard_home_transactions_transfer_card h2 {
+    font-size: 1.1rem;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.urcrypto_dashboard_home_transactions_transfer_card_crypto_transfer_avatar_images {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.urcrypto_dashboard_home_transactions_transfer_card_avatar_carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.urcrypto_dashboard_home_transactions_transfer_card_crypto_transfer_avatar_images button {
+    background-color: var(--secondary-button-color);
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+        rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.urcrypto_dashboard_home_transactions_transfer_card_crypto_transfer_avatar_images button svg {
+    color: var(--main-background-color);
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+
+.urcrypto_dashboard_home_transactions_transfer_card_form {
+    width: 80%;
+    height: 5rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.urcrypto_dashboard_home_transactions_transfer_card_form_header {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.urcrypto_dashboard_home_transactions_transfer_card_form_input {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.urcrypto_dashboard_home_transactions_transfer_card_form_input input {
+    width: 22rem;
+    font-family: 'Inter';
+    border: 1px solid #e5e5e5;
+    border-radius: .3rem;
+    height: 2.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.urcrypto_dashboard_home_transactions_transfer_card_form_header {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #c6c5c5;
+    font-weight: 500;
+}
+
+.urcrypto_dashboard_home_transactions_transfer_card_button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 4rem;
+    justify-content: flex-start;
+}
+
+.urcrypto_dashboard_home_transactions_transfer_card_button button {
+    cursor: pointer;
+    width: 100%;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: .5rem;
+    height: 3.3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.urcrypto_dashboard_home_transactions_transfer_card_button button p {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--main-background-color);
+    margin-right: 1rem;
+}
+
+.urcrypto_dashboard_home_transactions_transfer_card_button button svg {
+    height: 2rem;
+    align-self: center;
+    color: var(--main-background-color);
+    width: auto;
+}
+
+.urcrypto_dashboard_home_transactions_new_crypto_card {
+    height: 18rem;
+    width: 100%;
+    width: 25rem;
+    border-radius: 1rem;
+     border: 1px solid #e5e5e5;
+     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.urcrypto_dashboard_home_transactions_new_crypto_card {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.urcrypto_dashboard_home_transactions_new_crypto_card ::--webkit-scrollbar {
+    display: none;
+}
+
+.urcrypto_dashboard_home_transactions_new_crypto_card_container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.urcrypto_dashboard_home_transactions_new_crypto_card_header {
+    display: flex;
+    margin-top: 1rem;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.urcrypto_dashboard_home_transactions_new_crypto_card_header h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.urcrypto_dashboard_home_transactions_new_crypto_card_header button {
+    width: 7rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.urcrypto_dashboard_home_transactions_new_crypto_card_header button p {
+    color: var(--button-color);
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.urcrypto_dashboard_home_transactions_new_crypto_card_content {
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.urcrypto_dashboard_home_crypto_card_items {
+    width: 100%;
+}
+
+.urcrypto_dashboard_home_crypto_card_items button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    height: 6rem;
+    width: 100%;
+    cursor: pointer;
+    gap: 1rem;
+}
+
+.urcrypto_dashboard_home_crypto_card_items_description {
+    text-align: left;
+    height: 4rem;
+    margin-right: auto;
+}
+
+.urcrypto_dashboard_home_crypto_card_items_description h3 {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    margin-top: 8px;
+    padding: 0;
+}
+
+.urcrypto_dashboard_home_crypto_card_items_description p {
+    color: #c6c5c5;
+    margin-top: -5px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+.urcrypto_dashboard_home_crypto_card_items_cta {
+    margin-right: 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 4rem;
+    justify-content:flex-end;
+}
+.urcrypto_dashboard_home_crypto_card_items_cta  svg{
+    height: 2.2em;
+    color: var(--button-color);
+    width: auto;
 }

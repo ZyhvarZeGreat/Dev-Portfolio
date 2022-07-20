@@ -1,0 +1,122 @@
+.urcrypto_dashboard_settings_security {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.urcrypto_dashboard_settings_security_container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.urcrypto_dashboard_settings_security_inputs {
+    width: 100%;
+    height: 27rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left: 2rem;
+}
+
+.urcrypto_dashboard_settings_security_header {
+    margin-left: 2rem;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.urcrypto_dashboard_settings_security_current_password_input {
+    width: 100%;
+}
+
+.urcrypto_dashboard_settings_security_current_password_input h4 {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.urcrypto_dashboard_settings_security_current_password_input input {
+    border: 1px solid #E5E5E5;
+    height: 3rem;
+    width: 80%;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.urcrypto_dashboard_settings_security_new_password_input {
+    width: 100%;
+}
+
+.urcrypto_dashboard_settings_security_new_password_input h4 {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    
+}
+
+.urcrypto_dashboard_settings_security_new_password_input input {
+    border: none;
+    height: 3rem;
+    width: 80%;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.urcrypto_dashboard_settings_security_confirm_password_input {
+    width: 100%;
+}
+
+.urcrypto_dashboard_settings_security_confirm_password_input h4 {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.urcrypto_dashboard_settings_security_confirm_password_input input {
+    border: none;
+    height: 3rem;
+    width: 80%;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.urcrypto_dashboard_settings_security_update_password_buttons {
+    margin-top: 2rem;
+    margin-left: -4rem;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 8rem;
+}
+.urcrypto_dashboard_settings_security_save_password_button{
+    height: 2.5rem;
+    width: 8rem;
+    margin-left: 2rem;
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    background-color: var(--button-color);
+    border: none;
+    color: var(--main-background-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.urcrypto_dashboard_settings_security_cancel_password_button{
+    height: 2.5rem;
+    width: 8rem;
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+}

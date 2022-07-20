@@ -21,8 +21,14 @@ const Sign_in_content = () => {
  <div className='urcrypto_email_sign_in'>
   <p className='urcrypto_email_sign_in_heading'>or continue with</p>
 
-  <input type='email' name='email' placeholder='Email'/>
-  <input type='text' name='password' placeholder='Password'/>
+<form>
+<input type='email' name='email' placeholder='Email'/>
+</form>
+
+<form>
+<input type='text' name='password' placeholder='Password'/>
+</form>
+
   <div className='urcrypto_email_sign_in_features'>
     <p>toggle</p>  
  <Link to='/'>

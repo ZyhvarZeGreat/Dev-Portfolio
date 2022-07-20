@@ -141,11 +141,12 @@
   height: 4rem;
   width: 25rem;
   font-size: 1.2rem;
+  background-color: transparent;
   border: none;
   border-radius: 0.3rem;
   text-align: left;
   font-family: "Inter";
-  background-color: #e5e4e4;
+  border:1px solid #e5e4e4;
 }
 
 .urcrypto_email_sign_in_heading {
@@ -188,7 +189,7 @@
 .urcrypto_signin_image_area_container {
   height: 100%;
   width: 100%;
-  background-color: var(--button-color);
+  background-color: var(--secondary-button-color);
   display: flex;
   align-items: center;
   justify-content: center;

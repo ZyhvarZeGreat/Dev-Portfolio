@@ -1,0 +1,55 @@
+.urcrypto_dashboard_wallets_cards_items{
+    height: 13rem;
+    width: 17rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: var(--main-background-color);
+}
+
+.urcrypto_dashboard_wallets_cards_items_container{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.urcrypto_dashboard_wallets_cards_items_header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+.urcrypto_dashboard_wallets_cards_items_header svg{
+    color: var(--button-color);
+    height: 1.2rem;
+}
+.urcrypto_dashboard_wallets_cards_items_header p{
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    color: var(--button-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.urcrypto_dashboard_wallets_cards_items_content {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.urcrypto_dashboard_wallets_cards_items_content  span {
+font-size: 1.2rem;
+font-family: 'Inter',Arial, Helvetica, sans-serif;
+font-weight: 600;
+}
+.urcrypto_dashboard_wallets_cards_items_content  p {
+    font-size: .9rem;
+    color: #e5e5e5;
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    }

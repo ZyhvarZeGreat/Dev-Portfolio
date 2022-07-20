@@ -63,7 +63,6 @@ const Dashboard_Sidenav = ({}) => {
 
   const side_nav_variants = {
     slidein:{
-      opapcity:0,
       x:-300
     },
     slideout:{

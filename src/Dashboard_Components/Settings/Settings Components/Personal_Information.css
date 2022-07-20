@@ -77,18 +77,18 @@ margin-left: 1rem;
 .urcrypto_personal_information_content_first_name_input input {
     height: 2.5rem;
     width: 18rem;
-    border: none;
+border: 1px solid #e5e5e5;
     border-radius: 3px;
     font-family: 'Inter'Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color:transparent;
 }
 .urcrypto_personal_information_content_last_name_input input {
     width: 18rem;
     height: 2.5rem;
-    border: none;
+border: 1px solid #e5e5e5;
     border-radius: 3px;
     font-family: 'Inter'Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color:transparent;
 }
 .urcrypto_personal_information_content_email_input h4{
     font-family: 'Inter' Arial, Helvetica, sans-serif;
@@ -101,10 +101,10 @@ margin-left: 1rem;
 .urcrypto_personal_information_content_email_input input {
     height: 2.5rem;
     width: 18rem;
-    border: none;
+border: 1px solid #e5e5e5;
     border-radius: 3px;
     font-family: 'Inter'Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color:transparent;
 }
 
 .urcrypto_personal_information_content_description_input {
@@ -125,7 +125,7 @@ height: 5rem;
 border-radius: 3px;
 width:85%;
 border: none;
-background-color: #f4f4f4;
+background-color:transparent
 }
 .urcrypto_personal_information_personal_information_header h3{
 font-size: 1.5rem;
@@ -184,26 +184,26 @@ width: 18rem;
 .urcrypto_personal_information_content_number_input input {
     height: 2.5rem;
     width: 18rem;
-    border: none;
+border: 1px solid #e5e5e5;
     border-radius: 3px;
     font-family: 'Inter'Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color:transparent;
 }
 .urcrypto_personal_information_content_language_input input {
     height: 2.5rem;
     width: 18rem;
-    border: none;
+border: 1px solid #e5e5e5;
     border-radius: 3px;
     font-family: 'Inter'Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color:transparent;
 }
-.urcrypto_personal_information_content_country_input input {
+.urcrypto_personal_information_content_country_input select {
     height: 2.5rem;
     width: 18rem;
-    border: none;
+border: 1px solid #e5e5e5;
     border-radius: 3px;
     font-family: 'Inter'Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color:transparent;
 }
 
 .urcrypto_personal_information_save_buttons{
@@ -212,7 +212,7 @@ width: 18rem;
     margin-top: 1rem;
     align-items: flex-start;
     justify-content: center;
-    border-top:1px solid  #818181;;
+    border-top:1px solid  #e5e5e5;;
 }
 .urcrypto_personal_information_save_buttons_container{
     width: 80%;

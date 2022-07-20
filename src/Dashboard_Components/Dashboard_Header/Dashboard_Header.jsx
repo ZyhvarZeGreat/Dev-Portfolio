@@ -54,8 +54,7 @@ const Dashboard_Header = () => {
               alt="https://www.freepik.com/psd/woman-illustration"
             />
             <button onClick={() => setOpened(!opened)}>
-              {" "}
-              <UilAngleDown />
+            <UilAngleDown  />
             </button>
             {opened && <AnimatePresence>
               <motion.div initial={{opacity:0,y:-50}} animate ={{ opacity:1,y:0 }} exit={{opacity:0,y:-50}} className="urcrypto_dashboard_header_actions_dropdown">
@@ -63,8 +62,6 @@ const Dashboard_Header = () => {
             </motion.div>
             </AnimatePresence>  }
           </div>
-          
-   
         </div>
      
       </div>
