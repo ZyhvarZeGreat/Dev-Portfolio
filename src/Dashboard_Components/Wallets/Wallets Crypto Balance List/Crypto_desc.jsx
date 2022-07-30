@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Fiat_desc = (props) => {
+const Crypto_desc = (props) => {
   return (
     <div className='urcrypto_wallet_list_description' style={{display:"flex",height:"3rem", width :"100%", flexDirection:"row",alignItems:"center",justifyContent:"space-around"}}>
-        <p> {props.icon} </p>
-        <p> {props.fiatCurrencySymbol} </p>
-        <p> {props.fiatCurrency} </p>
+        <img style={{height:"3rem", width:"auto",padding:"none"}}  src = { `../Images/${props.icon}.png`  }/>  
+        <p style={{fontWeight:"500", marginLeft:"1rem"}} > {props.cryptoCurrency} </p>
+        <p style={{fontWeight:"500", color:"#e5e5e5"}}> {props.cryptoCurrencySymbol} </p>
     </div>
   )
 }
 
-export default Fiat_desc
+export default Crypto_desc

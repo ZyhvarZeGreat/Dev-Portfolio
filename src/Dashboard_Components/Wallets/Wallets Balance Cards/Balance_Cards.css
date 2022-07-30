@@ -6,7 +6,6 @@
     align-items: center;
     justify-content: center;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    background-color: var(--main-background-color);
 }
 
 .urcrypto_dashboard_wallets_cards_items_container{
@@ -16,7 +15,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    
 }
 .urcrypto_dashboard_wallets_cards_items_header{
     width: 100%;
@@ -24,7 +22,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: antiquewhite;
 }
 .urcrypto_dashboard_wallets_cards_items_header svg{
     color: var(--button-color);

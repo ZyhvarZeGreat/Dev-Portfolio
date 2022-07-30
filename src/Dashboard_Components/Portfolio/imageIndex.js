@@ -1,0 +1,7 @@
+export  {default as Bitcoin }from  '../../assets/bitcoin.png'
+export  {default as Ethereum }from  '../../assets/ethereum.png'
+export  {default as Tether }from  '../../assets/tether.png'
+export  {default as Binance }from  '../../assets/binance.png'
+export  {default as Polygon }from  '../../assets/polygon.png'
+export  {default as Doge }from  '../../assets/dogecoin.png'
+export  {default as Cardano }from  '../../assets/cardano.png'

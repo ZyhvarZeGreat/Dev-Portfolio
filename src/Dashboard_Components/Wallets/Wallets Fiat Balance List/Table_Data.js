@@ -61,3 +61,12 @@ const table_data = [
 export default table_data;
 
 console.log (table_data);
+
+function itemloop (item) {
+  for (let i = 0; i <= 16;  i.length++) {
+return{
+i
+}
+  }
+} 
+console.log (itemloop());

@@ -1,0 +1,125 @@
+.urcrypto_dashboard_portfolio_top_up{
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: .5rem; 
+
+}
+.urcrypto_dashboard_portfolio_top_up_container{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.urcrypto_dashboard_portfolio_top_up_header{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5 ;
+}
+.urcrypto_dashboard_portfolio_top_up_header h4{
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.urcrypto_dashboard_portfolio_top_up_header svg{
+height: 1.4rem;
+width: auto;
+}
+.urcrypto_dashboard_portfolio_top_up_content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    height: 80%;
+    margin-top: 1rem;
+}
+.urcrypto_dashboard_portfolio_top_up_content_input{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #e5e5e5;
+    border-radius: .3rem;
+}
+.urcrypto_dashboard_portfolio_top_up_content_input-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 6rem;
+    justify-content: space-around;
+    margin-left: 1rem;
+}
+.urcrypto_dashboard_portfolio_top_up_content_input-text legend{
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.urcrypto_dashboard_portfolio_top_up_content_input-text input{
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    height: 2rem;
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.urcrypto_dashboard_portfolio_top_up_content_dropdown{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+
+.urcrypto_dashboard_portfolio_top_up_content_card_select{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.urcrypto_dashboard_portfolio_top_up_content_card_select_image {
+    background-color: #e5e5e5;
+border-radius: .3rem;
+}
+.urcrypto_dashboard_portfolio_top_up_content_card_select_image img{
+ height: 7rem;
+ width: auto;   
+}
+
+.urcrypto_dashboard_portfolio_top_up_submit_button{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    border-top: 1px solid #e5e5e5;
+}
+.urcrypto_dashboard_portfolio_top_up_submit_button button{
+    height: 100%;
+    width: 90%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: var(--button-color);
+    font-size: 1.2rem;
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    font-weight:500;
+    
+}

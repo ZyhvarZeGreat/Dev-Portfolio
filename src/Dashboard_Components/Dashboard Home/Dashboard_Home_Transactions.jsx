@@ -111,7 +111,6 @@ const Dashboard_Home_Transactions = () => {
   return (
     <div className="urcrypto_dashboard_home_transactions_wrapper">
     <div className="urcrypto_dashboard_home_transactions_header">
-      <h1> kanknkemk</h1>
     </div>
       <div className="urcrypto_dashboard_home_transactions_container">
       

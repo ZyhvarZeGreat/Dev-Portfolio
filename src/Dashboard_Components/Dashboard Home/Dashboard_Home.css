@@ -2,8 +2,14 @@
     width: 100%;
     height: 100%;
     overflow-y: scroll;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
+.urcrypto_dashboard_home::-webkit-scrollbar {
+    display: none;
+}
 .urcrypto_dashboard_home_container {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
@@ -16,8 +22,12 @@
         " statistics statistics transactions"
     ;
     overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
-
+.urcrypto_dashboard_home_container::-webkit-scrollbar {
+    display: none;
+}
 .urcrypto_dashboard_home_statistics {
     grid-area: statistics;
     display: flex;
@@ -28,6 +38,10 @@
     height: 100%;
     width: 100%;
     overflow-y: scroll;
+   -ms-overflow-style: none;
+}
+.urcrypto_dashboard_home_statistics::-webkit-scrollbar {
+    display: none;
 }
 .urcrypto_dashboard_home_transactions_header{
     height: 26rem;
@@ -41,7 +55,6 @@
     justify-content: center;
     place-self: center;
     height: 100%;
-
     width: 100%;
     -ms-overflow-style: none;
     scrollbar-width: none;

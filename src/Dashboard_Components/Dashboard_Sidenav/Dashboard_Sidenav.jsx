@@ -5,6 +5,7 @@ import Side_nav_link from './Side_nav_link'
 import {useIsSmall} from '../../hooks/useMediaQuery'
 import { motion } from 'framer-motion'
 import Logo from '../../assets/dashboardLogo.png'
+import {useAuth} from '../../Services/contexts/AuthContext'
 let sidenav_links = [
   {
     id:"1",

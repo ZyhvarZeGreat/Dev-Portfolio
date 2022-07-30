@@ -1,13 +1,12 @@
 .urcrypto_dashboard_wallet_crypto_balance_list_column{
     display: flex;
-    height: 20rem;
     width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 .urcrypto_dashboard_wallet_crypto_balance_list_column_header{
-    height: 20%;
+    height: 6rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -35,15 +34,15 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 3rem;
+    height: 6rem;
     justify-content: space-around;
     border-top: 1px solid #66636343;
-
 }
 
 .urcrypto_dashboard_wallet_crypto_balance_list_column_content p{
     font-family: 'Inter',Arial, Helvetica, sans-serif;
     width: 100%;
+    font-weight: 600;
     display: flex;
     flex-direction: row;
     align-items: center;

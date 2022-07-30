@@ -173,11 +173,13 @@
   font-size: var(--heading-1-font-size);
   line-height: 2rem;
   font-family: "YukitaSansLight";
+  
   margin-bottom: -0.8rem;
 }
 .urcrypto_hero_stats_container_content p {
   font-size: var(--stats--subheading-font-size);
   font-weight: 400;
+  font-family:'Satoshi';
 }
 @media screen and (max-width: 900px) {
   .urcrypto_hero_image {

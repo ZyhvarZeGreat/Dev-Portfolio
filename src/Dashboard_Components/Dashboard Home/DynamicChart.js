@@ -31,15 +31,12 @@ const DynamicChart = () => {
         width={"100%"}
         height={"100%"}
         data={data}
+        
       >
         <defs>
           <linearGradient id="color" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#2725e7" stopOpacity={0.4}>
-              {" "}
-            </stop>
-            <stop offset="67%" stopColor="#2725e7" stopOpacity={0.02}>
-              {" "}
-            </stop>
+            <stop offset="0%" stopColor="#2725e7" stopOpacity={0.4}></stop>
+            <stop offset="67%" stopColor="#2725e7" stopOpacity={0.02}></stop>
           </linearGradient>
         </defs>
         <Bar
@@ -48,6 +45,7 @@ const DynamicChart = () => {
           dataKey="value"
           fill="#2725e7"
           stroke="#fff"
+          background={false}
         />
         <XAxis
           dataKey={"date"}
@@ -68,8 +66,11 @@ const DynamicChart = () => {
           tickCount={5}
           tickFormatter={(number) => `$${millify(number.toFixed(2))}`}
         />
-        <Tooltip viewBox={{width:0, height:0}} content={<CustomTooltip />} />
-        <CartesianGrid opacity={".3"} vertical={false} verticalFill="#e5e5e5" />
+        <Tooltip cursor={false}
+          viewBox={{ width: 0, height: 0 }}
+          content={<CustomTooltip />}
+        />
+        <CartesianGrid  opacity={".3"} vertical={false} verticalFill="#e5e5e5" />
       </BarChart>
     </ResponsiveContainer>
   );

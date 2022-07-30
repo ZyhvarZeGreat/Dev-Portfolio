@@ -4,6 +4,22 @@
    display:flex;
    flex-direction: column;
    align-items: center;
-   justify-content: space-between;
+   justify-content: center;
    overflow-y: scroll;
+   -ms-overflow-style: none;
+   scrollbar-width:none;
+}
+
+
+.urcrypto_dashboard_wallets_container {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    gap: 4rem;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width:none;
 }

@@ -5,9 +5,15 @@ import Wallets_Fiat_Balance from './Wallets Fiat Balance List/Wallets_Fiat_Balan
 const Wallets = () => {
   return (
     <div className='urcrypto_dashboard_wallets'>
+
+
+    <div className='urcrypto_dashboard_wallets_container'>
+
     <Wallets_Balance_Cards/>
     <Wallets_Fiat_Balance_List/>
     <Wallets_Crypto_Balance/>
+    </div>
+
     </div>
   )
 }

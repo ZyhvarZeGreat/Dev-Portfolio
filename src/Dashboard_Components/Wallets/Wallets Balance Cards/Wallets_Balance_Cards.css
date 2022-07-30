@@ -1,5 +1,6 @@
 .urcrypto_dashboard_wallets_balance_cards_container{
     display: flex;
+    margin-top: 3rem;
     width: 98%;
     flex-direction: row;
     align-items: center;
