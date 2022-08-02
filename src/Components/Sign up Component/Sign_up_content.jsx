@@ -3,11 +3,12 @@ import { UilFacebook, UilGoogle } from "@iconscout/react-unicons";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../Services/contexts/AuthContext";
 import { Alert } from "react-bootstrap";
+import { Dashboard_Home } from "../../Dashboard_Components";
 const Sign_in_content = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
   const confirmPasswordRef = useRef();
-  const { signup, currentUser } = useAuth();
+  const { signup } = useAuth();
   const navigate = useNavigate();
   const [error, setError] = useState("");
   const [Loading, setLoading] = useState(false);
@@ -20,8 +21,9 @@ const Sign_in_content = () => {
       setError("");
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
-      navigate.push("/Dashboard/Home");
-    } catch {
+     navigate("Dashboard/Home")
+    } 
+    catch {
       setError("Failed to create an account");
     }
     setLoading(false);
@@ -50,12 +52,12 @@ const Sign_in_content = () => {
             style={alertStyle}
             variant="danger"
           >
-            {" "}
-            {error}{" "}
+            {error}
           </Alert>
         )}
         <p>Login to your account</p>
       </div>
+      
       <div className="urcrypto_social_sign_in">
         <div>
           <UilGoogle />
@@ -72,7 +74,6 @@ const Sign_in_content = () => {
         <input
           type="email"
           name="email"
-          onSubmit={handleSubmit}
           ref={emailRef}
           required={true}
           placeholder="Email"
@@ -80,7 +81,6 @@ const Sign_in_content = () => {
         <input
           type="password"
           name="password"
-          onSubmit={handleSubmit}
           ref={passwordRef}
           required={true}
           placeholder="Password"
@@ -88,7 +88,6 @@ const Sign_in_content = () => {
         <input
           type="password"
           name="confirm password"
-          onSubmit={handleSubmit}
           ref={confirmPasswordRef}
           required={true}
           placeholder="Confirm Password"
@@ -103,6 +102,7 @@ const Sign_in_content = () => {
           disabled={Loading}
           type="submit"
           name="login"
+          onClick={handleSubmit}
           className="urcrypto_email_sign_in_btn"
         >
           Sign Up

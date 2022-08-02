@@ -23,7 +23,7 @@ function App() {
       <AuthProvider>
         <Routes>
           <Route path="/" index element={<Homepage />} />
-          <Route path="Dashboard" element={<Dashboard />}>
+          <Route exact path="Dashboard" element={<Dashboard />}>
             <Route exact path="Home" element={<Dashboard_Home />} />
             <Route path="Analytics" element={<Analytics />} />
             <Route path="Portfolio" element={<Portfolio />} />

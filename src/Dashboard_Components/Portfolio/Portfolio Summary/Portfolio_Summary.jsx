@@ -1,9 +1,16 @@
 import React from "react";
 import { PieChart, Pie } from "recharts";
 import "./Portfolio_Summary.css";
+import crypto_account_details from './crypto_account_details_data'
 import Portfolio_Summary_Account from "./Portfolio_Summary_Account";
 import { UilSearchPlus, UilEllipsisV } from "@iconscout/react-unicons";
+
 const Portfolio_Summary = () => {
+  const Portfolio_Summary_Account_items = crypto_account_details.map(({circle,image,crypto_desc,crypto_amount})=> {
+    return (
+      <Portfolio_Summary_Account circle={circle} image={image} crypto_desc={crypto_desc} crypto_amount={crypto_amount}/>
+    )
+  })
   return (
     <div className="urcrypto_dashboard_portfolio_summary">
       <div className="urcrypto_dashboard_portfolio_summary_container">
@@ -33,7 +40,7 @@ const Portfolio_Summary = () => {
             </PieChart>
           </div>
           <div className="urcrypto_dashboard_portfolio_summary_content_charts_account">
-            <Portfolio_Summary_Account />
+          {Portfolio_Summary_Account_items}
           </div>
         </div>
       </div>

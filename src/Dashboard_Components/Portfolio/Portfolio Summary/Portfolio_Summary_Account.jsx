@@ -1,9 +1,8 @@
 import React from 'react'
-import { Bitcoin } from '../imageIndex'
 import {UilCircle} from '@iconscout/react-unicons'
 const Portfolio_Summary_Account = (props) => {
   return (
-    <div>
+    <div className='urcrypto_dashboard_portfolio_summary_charts_accounts_icons'>
       {props.svg}
 <img src = {`../Images/${props.image}`} alt= "crypto"/>
 <p> {props.crypto_desc} </p>

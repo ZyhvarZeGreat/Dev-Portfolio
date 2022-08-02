@@ -20,7 +20,7 @@ const navigate = useNavigate()
       setError('') 
       setLoading(true)
       await  signin(emailRef.current.value,passwordRef.current.value)
-      navigate.push('/Dashboard/Home')
+      navigate('Dashboard/Home')
        } 
       catch{
     setError('Failed to sign in')
@@ -46,7 +46,7 @@ const navigate = useNavigate()
     <div className='urcrypto_sign_in_content'>
     <div className='urcrypto_sign_in_content_header' >
     <h1> Welcome Back</h1>
-    {error && <motion.Alert whileInView={{opacity:1,x:0}} initial = {{opacity:0,x:-80}} variant =  "danger" style = {alertStyle}> {error} </motion.Alert> }
+    {error && <Alert variant =  "danger" style = {alertStyle}> {error} </Alert> }
     <p>Login to your account</p>
     </div>
  <div className='urcrypto_social_sign_in'>
