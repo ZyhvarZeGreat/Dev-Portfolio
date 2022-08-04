@@ -1,42 +1,16 @@
-.urcrypto_portfolio_wallets_crypto_balance{
-    background-color: azure;
-    display:grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2.5fr;
-    flex-direction: row;
-    width: 98%;
-    align-items: center;
-    border-radius:.5rem ;
-    background-color: var(--main-background-color);
-    box-shadow: rgba(164, 171, 179, 0.2) 0px 8px 24px;
+.urcrypto_dashboard_portfolio_wallet_balance{
+ overflow-y: scroll;   
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;
+ height: 100%;
+ scroll-snap-align: y;
+ scroll-snap-type: mandatory;
+ width: 100%;
 }
-
-.urcrypto_portfolio_wallets_crypto_balance :nth-child(1) 
 .urcrypto_dashboard_wallet_crypto_balance_list_column_header h3 {
     color: #000;
     font-size: 1.4rem;
     font-weight: 600;
-}
-.urcrypto_portfolio_wallets_crypto_balance :nth-child(1){
-
-    grid-area: 1/1;
-}
-.urcrypto_portfolio_wallets_crypto_balance :nth-child(2){
-
-    grid-area: 1/2;
-}
-.urcrypto_portfolio_wallets_crypto_balance :nth-child(3){
-
-    grid-area: 1/3;
-}
-.urcrypto_portfolio_wallets_crypto_balance :nth-child(4){
-
-    grid-area: 1/4;
-}
-.urcrypto_portfolio_wallets_crypto_balance :nth-child(5){
-
-    grid-area: 1/5;
-}
-.urcrypto_portfolio_wallets_crypto_balance :nth-child(6){
-
-    grid-area: 1/6;
 }

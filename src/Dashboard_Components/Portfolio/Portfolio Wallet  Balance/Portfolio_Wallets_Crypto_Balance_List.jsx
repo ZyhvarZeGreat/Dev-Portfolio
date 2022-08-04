@@ -1,13 +1,6 @@
 import React from "react";
 import "./Portfolio_Wallets_Crypto_Balance_List.css";
-import Crypto_desc from "./Crypto_desc";
 const Portfolio_Wallets_crypto_Balance_List = (props) => {
-  const desc_data = [];
-  for (let i = 0; i < 16; i++) {
-    desc_data.push({
-      crypto_desc: <Crypto_desc />,
-    });
-  }
   return (
     <div className="urcrypto_dashboard_portfolio_wallet_crypto_balance_list_column">
       <div className="urcrypto_dashboard_portfolio_wallet_crypto_balance_list_column_header">
@@ -46,30 +39,6 @@ const Portfolio_Wallets_crypto_Balance_List = (props) => {
         </div>
       </div>
     </div>
-
-    //     <div className="urcrypto_dashboard_portfolio_wallet_crypto_balance_list_wrapper">
-
-    // <div className="urcrypto_dashboard_portfolio_wallet_crypto_balance_list_content">
-    // <div className="urcrypto_dashboard_portfolio_wallet_crypto_balance_list_content_items">
-    //   <div className="urcrypto_dashboard_portfolio_wallet_crypto_balance_list_content_items_description">
-    //   <p> {props.icon} </p>
-    //   <p> {props.cryptoCurrencySymbol} </p>
-    //   <p> {props.cryptoCurrency}  </p>
-    //   </div>
-
-    //   <div className="urcrypto_dashboard_portfolio_wallet_crypto_balance_list_content_items_data">
-    //   <p> {props.totalBalance} </p>
-    //   <p> {props.available}  </p>
-    //   <p> {props.inOrder} </p>
-    //   <p> {props.BTCValue} </p>
-    //   <p> {props.Action} </p>
-    //   </div>
-    //   <div className="urcrypto_dashboard_portfolio_wallet_crypto_balance_list_content_items_buttons">
-    //   {props.button}
-    //   </div>
-    // </div>
-    // </div>
-    //     </div>
   );
 };
 
