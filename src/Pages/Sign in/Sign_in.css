@@ -189,7 +189,7 @@
 .urcrypto_signin_image_area_container {
   height: 100%;
   width: 100%;
-  background-color: var(--secondary-button-color);
+  background: linear-gradient(to top left, #3e55e5, #4058f5ca);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -275,6 +275,14 @@
     height: 4rem;
     width: 90%;
   }
+  .urcrypto_signin_image_area_container {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top left, #3e55e5, #4058f5ca);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 }
 
@@ -347,7 +355,7 @@
 
   .urcrypto_signin_text_area {
     height: 100%;
-    background-color: var(--button-color);
+    background: linear-gradient(to top left, #3e55e5, #4058f5ca);
     width: 100%;
   }
 

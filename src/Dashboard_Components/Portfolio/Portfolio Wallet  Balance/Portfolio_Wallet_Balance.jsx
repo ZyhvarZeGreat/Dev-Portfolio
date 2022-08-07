@@ -4,7 +4,7 @@ import crypto_table_data from "./Table_Data";
 import Portfolio_Wallets_Crypto_Balance_List from "./Portfolio_Wallets_Crypto_Balance_List";
 const portfolio_wallet_items = crypto_table_data.map(({heading,first_row,second_row,third_row,fourth_row,fifth_row,sixth_row,seventh_row,eighth_row,ninth_row,tenth_row})  => {
   return(
-    <Portfolio_Wallets_Crypto_Balance_List heading = {heading} first_row = {first_row} second_row = {second_row} third_row = {third_row} fourth_row = {fourth_row} fifth_row = {fifth_row} sixth_row = {sixth_row}                   />
+    <Portfolio_Wallets_Crypto_Balance_List heading = {heading} first_row = {first_row} second_row = {second_row} third_row = {third_row} fourth_row = {fourth_row} fifth_row = {fifth_row} sixth_row = {sixth_row}   seventh_row={seventh_row}      eighth_row={eighth_row} ninth_row={ninth_row} tenth_row={tenth_row}          />
   )
 })
 const Portfolio_Wallet_Balance = () => {

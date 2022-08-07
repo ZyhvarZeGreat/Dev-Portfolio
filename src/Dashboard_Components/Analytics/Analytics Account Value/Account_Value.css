@@ -1,0 +1,24 @@
+.urcrypto_dashboard_analytics_account_value{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    height: 100%;
+    width: 100%;
+    background-color: cadetblue;
+}
+.urcrypto_dashboard_analytics_account_value_header{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blueviolet;
+}
+
+.urcrypto_dashboard_analytics_charts{
+    width: 80%;
+height: 70%;
+}

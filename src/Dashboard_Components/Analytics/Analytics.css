@@ -1,0 +1,77 @@
+.urcrypto_dashboard_analytics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+.urcrypto_dashboard_analytics_header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: .3rem;
+    height: 7rem;
+    width: 95%;
+}
+.urcrypto_dashboard_analytics_header h1{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+}
+.urcrypto_dashboard_analytics_header p{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+.urcrypto_dashboard_analytics_container{
+    display: grid;
+    height: 100%;
+    width: 95%;
+    grid-template-columns: repeat(4,(1fr));
+    grid-template-rows: repeat(5,(1fr));
+    gap: 1rem;
+  
+}
+
+.urcrypto_dashboard_analytics_account_value{
+   grid-column:  1/3;
+   grid-row: 2/1;
+   height:100% ;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.urcrypto_dashboard_analytics_performance{
+    grid-column: span 2;
+     grid-row:span 2;
+     height:100% ;
+     width: 100%;
+}
+.urcrypto_dashboard_analytics_cashflow{
+    grid-column: 1/3;
+    grid-row: span 2;
+    height:100% ;
+    width: 100%;
+}
+
+.urcrypto_dashboard_analytics_profits{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.urcrypto_dashboard_analytics_revenue{
+    grid-column: 1/3;
+    grid-row: span 3;
+}
+.urcrypto_dashboard_analytics_watchlist{
+    grid-column: 4/4;
+    grid-row: span 2;
+}

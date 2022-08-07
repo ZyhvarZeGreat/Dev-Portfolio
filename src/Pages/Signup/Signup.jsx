@@ -1,5 +1,6 @@
 import React from 'react'
 import './Sign_up.css'
+import {motion} from 'framer-motion'
 import Hero  from '../../assets/sign up hero.png'
 import { Sign_up_content, Sign_up_header } from '../../Components/Sign up Component'
 
@@ -13,7 +14,7 @@ const Sign_up = () => {
       </div>
       <div className='urcrypto_signup_image_area'>
       <div className='urcrypto_signup_image_area_container'>
-      <img src={Hero} alt="sign in hero"/>
+      <motion.img initial={{ y:50}} whileInView={{ y:0,}} transition={{duration:2,type:'tween', repeat:Infinity ,repeatType:'reverse' }}  src={Hero} alt="sign in hero"/>
 
       </div>
       </div>

@@ -10,9 +10,11 @@
   align-items: center;
   justify-content: space-around;
 }
+
 .urcrypto_navbar a {
   text-decoration: none;
 }
+
 .urcrypto_navbar_container {
   height: 100%;
   width: 90%;
@@ -21,14 +23,17 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .urcrypto_navbar_logo {
   height: max-content;
   width: max-content;
 }
+
 .urcrypto_navbar_logo img {
   height: 2rem;
   width: 8rem;
 }
+
 .urcrypto_navbar_links {
   display: flex;
   width: 20rem;
@@ -36,12 +41,14 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .urcrypto_navbar_links a {
   font-size: var(--heading-3-font-size);
   font-family: "Inter";
   font-weight: 400;
   color: black;
 }
+
 .urcrypto_mobile_navbar_btn {
   display: none;
 }
@@ -55,10 +62,12 @@
   justify-content: space-between;
   font-family: "Inter";
 }
+
 .urcrypto_navbar_cta_signin {
   font-weight: 600;
   color: black;
 }
+
 .urcrypto_navbar_cta_signup {
   border: var(--button-color) solid 1px;
   padding: 0.756rem 1.512rem;
@@ -77,38 +86,49 @@
   .urcrypto_navbar_links {
     display: none;
   }
+
   .urcrypto_navbar_container {
     width: 90%;
   }
+
   .urcrypto_navbar_links {
     display: none;
   }
+
   .urcrypto_navbar_cta {
+
     display: none;
   }
+
   .urcrypto_mobile_navbar_btn {
     display: block;
     background-color: transparent;
+    
     height: 2.5rem;
     width: 2.5rem;
     border: var(--button-color) solid 1px;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     cursor: pointer;
   }
+
   .urcrypto_mobile_navbar_btn svg {
     height: 1.8rem;
     width: 1.8rem;
   }
-  .urcrypto_mobile_navbar_skew{
+
+
+  .urcrypto_mobile_navbar_skew {
     background-color: white;
     width: 100%;
     height: 100%;
   }
-  .urcrypto_mobile_navbar{
+
+  .urcrypto_mobile_navbar {
     display: flex;
-    background-color: var(--button-color);
+    background-color: rgb(235, 238, 252);
+    /* background: linear-gradient(to top left, #3e55e5,#4058f5ca ); */
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: fixed;
     flex-direction: column;
     height: 100%;
@@ -119,50 +139,61 @@
     bottom: 0;
     right: 0;
   }
-  .urcrypto_mobile_navbar_container{
+
+  .urcrypto_mobile_navbar_container {
     height: 100%;
     width: 98%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: 3rem;
     flex-direction: column;
   }
+
   .urcrypto_mobile_navbar_logo {
     height: max-content;
     width: max-content;
     height: 8%;
-  }
-  .urcrypto_mobile_navbar_logo img {
-    height: 3.7rem;
-    width: auto;
-  }
-  .urcrypto_mobile_navbar_links{
-    height: 70%;
-  width: 98%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .urcrypto_mobile_navbar_links a{
-    font-size: 2.7em;
-    color: var(--main-background-color);
-    font-family: 'Inter',Arial, Helvetica, sans-serif;
-  }
-  .urcrypto_mobile_navbar_cta{
-width: 95%;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
+    margin-top: 2rem;
+    align-self: flex-start;
+    margin-left: 2rem;
   }
 
-  .urcrypto_mobile_navbar_cta_signin{
+  .urcrypto_mobile_navbar_logo img {
+    height: 2.7rem;
+    width: auto;
+  }
+
+  .urcrypto_mobile_navbar_links {
+    height: 60%;
+    width: 75%;
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .urcrypto_mobile_navbar_links a {
+    font-size: 2em;
+    background-clip: border-box;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+  }
+
+  .urcrypto_mobile_navbar_cta {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .urcrypto_mobile_navbar_cta_signin {
     height: 3rem;
-    background-color: var(--main-background-color);
+    background-color: var(--button-color);
     width: 45%;
-    font-weight: 400;
-    color: var(--button-color);
+    font-weight: 600;
+    color: var(--main-background-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,22 +201,20 @@ justify-content: space-between;
     font-family: 'Inter';
     border-radius: .3rem;
   }
-  .urcrypto_mobile_navbar_cta_signup{
+
+  .urcrypto_mobile_navbar_cta_signup {
     height: 3rem;
-    background-color: var(--main-background-color);
+    background: linear-gradient(to top left, #3e55e5, #4058f5ca);
     border: 1px solid var(--button-color);
-    background-color: transparent;
-    color: var(--main-background-color);
     width: 45%;
-    font-weight: 400;
+    font-weight: 600;
     display: flex;
     align-items: center;
+    color: var(--main-background-color);
     justify-content: center;
     font-size: 1.4rem;
     font-family: 'Inter';
     border-radius: .3rem;
   }
- 
+
 }
-
-

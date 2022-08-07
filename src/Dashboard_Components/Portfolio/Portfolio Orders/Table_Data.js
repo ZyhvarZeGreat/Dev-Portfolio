@@ -43,7 +43,7 @@ return  priceCalculator(usdToBtcPrice,crypto_price) - availableBalanceCalculator
 console.log(inOrderBalanceCalculator(usdToBtcPrice,ethereumPrice))
  const crypto_table_data = [
   {
-   heading: "Crypto Balance",
+   heading: "Orders",
    first_row:<Crypto_desc icon="bitcoin" cryptoCurrencySymbol="BTC"  cryptoCurrency="Bitcoin" />,
    second_row:<Crypto_desc icon="ethereum" cryptoCurrencySymbol="ETH"  cryptoCurrency="Ethereum" />,
    third_row:<Crypto_desc icon="tether" cryptoCurrencySymbol="USDT"  cryptoCurrency="Tether" />,
@@ -57,21 +57,21 @@ console.log(inOrderBalanceCalculator(usdToBtcPrice,ethereumPrice))
   },
 
   {
-    heading: "Total",
-    first_row:`${millify((priceCalculator(usdToBtcPrice,btcPrice).toFixed(2)))}`,
-    second_row:`${millify(priceCalculator(usdToBtcPrice,ethereumPrice).toFixed(2))}`,
-    third_row:`${millify(priceCalculator(usdToBtcPrice,1).toFixed(2))}`,
-    fourth_row:`${millify(priceCalculator(usdToBtcPrice,binancePrice).toFixed(2))}`,
-    fifth_row:`${millify(priceCalculator(usdToBtcPrice,litecoinPrice).toFixed(2))}`,
-    sixth_row:`${millify(priceCalculator(usdToBtcPrice,ripplePrice).toFixed(2))}`,
-    seventh_row:`${millify(priceCalculator(usdToBtcPrice,stellarPrice).toFixed(2))}`,
-    eigth_row:`${millify(priceCalculator(usdToBtcPrice,chainlinkPrice).toFixed(2))}`,
-    ninth_row:`${millify(priceCalculator(usdToBtcPrice,cardanoPrice).toFixed(2))}`,
-    tenth_row:`${millify(priceCalculator(usdToBtcPrice,dogecoinPrice).toFixed(2))}`,
+    heading: "Open Orders",
+   first_row:`${millify((priceCalculator(usdToBtcPrice,btcPrice).toFixed(2)))}`,
+   second_row:`${millify(priceCalculator(usdToBtcPrice,ethereumPrice).toFixed(2))}`,
+   third_row:`${millify(priceCalculator(usdToBtcPrice,1).toFixed(2))}`,
+   fourth_row:`${millify(priceCalculator(usdToBtcPrice,binancePrice).toFixed(2))}`,
+   fifth_row:`${millify(priceCalculator(usdToBtcPrice,litecoinPrice).toFixed(2))}`,
+   sixth_row:`${millify(priceCalculator(usdToBtcPrice,ripplePrice).toFixed(2))}`,
+   seventh_row:`${millify(priceCalculator(usdToBtcPrice,stellarPrice).toFixed(2))}`,
+   eigth_row:`${millify(priceCalculator(usdToBtcPrice,chainlinkPrice).toFixed(2))}`,
+   ninth_row:`${millify(priceCalculator(usdToBtcPrice,cardanoPrice).toFixed(2))}`,
+   tenth_row:`${millify(priceCalculator(usdToBtcPrice,dogecoinPrice).toFixed(2))}`,
   },
 
   {
-    heading: "In Order",
+    heading: "Order History",
     first_row:`${millify(inOrderBalanceCalculator(usdToBtcPrice,btcPrice).toFixed(2))}`,
     second_row:`${millify(inOrderBalanceCalculator(usdToBtcPrice,ethereumPrice).toFixed(2))}`,
     third_row:`${millify(inOrderBalanceCalculator(usdToBtcPrice,1).toFixed(2))}`,
@@ -85,18 +85,19 @@ console.log(inOrderBalanceCalculator(usdToBtcPrice,ethereumPrice))
   
   },
   {
-    heading: " BTC Value",
-    first_row:`${(BTCValue).toFixed(4)}`,
-    second_row:`${BTCValue.toFixed(4)}`,
-    third_row:`${BTCValue.toFixed(4)}`,
-    fourth_row:`${BTCValue.toFixed(4)}`,
-    fifth_row:`${BTCValue.toFixed(4)}`,
-    sixth_row:`${BTCValue.toFixed(4)}`,
-    seventh_row:`${BTCValue.toFixed(4)}`,
-    eigth_row:`${BTCValue.toFixed(4)}`,
-    ninth_row:`${BTCValue.toFixed(4)}`,
-    tenth_row:`${BTCValue.toFixed(4)}`,
+    heading: " Trade History",
+    first_row:`${millify(BTCValue.toFixed(4))}`,
+    second_row:`${millify(BTCValue.toFixed(4))}`,
+    third_row:`${millify(BTCValue.toFixed(4))}`,
+    fourth_row:`${millify(BTCValue.toFixed(4))}`,
+    fifth_row:`${millify(BTCValue.toFixed(4))}`,
+    sixth_row:`${millify(BTCValue.toFixed(4))}`,
+    seventh_row:`${millify(BTCValue.toFixed(4))}`,
+    eigth_row:`${millify(BTCValue.toFixed(4))}`,
+    ninth_row:`${millify(BTCValue.toFixed(4))}`,
+    tenth_row:`${millify(BTCValue.toFixed(4))}`,
   },
+
 ];
 
 export default crypto_table_data

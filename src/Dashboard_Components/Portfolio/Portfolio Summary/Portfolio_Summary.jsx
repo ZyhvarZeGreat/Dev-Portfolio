@@ -1,6 +1,7 @@
 import React from "react";
 import { PieChart, Pie } from "recharts";
 import "./Portfolio_Summary.css";
+import {millify} from 'millify'
 import crypto_account_details from './crypto_account_details_data'
 import Portfolio_Summary_Account from "./Portfolio_Summary_Account";
 import { UilSearchPlus, UilEllipsisV } from "@iconscout/react-unicons";
@@ -26,12 +27,12 @@ const Portfolio_Summary = () => {
           <div className="urcrypto_dashboard_portfolio_summary_content_description">
             <div>
               <h5> Account Balance</h5>
-              <h1> 2.03505500 BTC </h1>
+              <h1> { 2.03505500.toFixed(5)} BTC </h1>
             </div>
 
             <div>
               <h5> Estimated Value</h5>
-              <h1> $38000 </h1>
+              <h1>${millify(38000) }</h1>
             </div>
           </div>
           <div className="urcrypto_dashboard_portfolio_summary_content_charts">

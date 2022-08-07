@@ -37,8 +37,8 @@ const Navbar = () => {
       opacity:1,
       transition:{
         duration: 1,
-        ease:'easeOut',
-        type:'tween'
+        type:'spring',
+        bounce:'.4'
       }
     }
     

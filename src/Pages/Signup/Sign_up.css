@@ -55,7 +55,7 @@
     height: 3rem;
     width: 12rem;
   }
-  .urcrypto_sign_in_content {
+  .urcrypto_sign_up_content {
     width: 100%;
     height: 90%;
     display: flex;
@@ -63,22 +63,22 @@
     align-items: center;
     justify-content: space-between;
   }
-  .urcrypto_sign_in_content h1 {
+  .urcrypto_sign_up_content h1 {
     font-family: "YukitaSansBold";
     font-size: var(--heading-1-font-size);
   }
-  .urcrypto_sign_in_content p {
+  .urcrypto_sign_up_content p {
     font-family: "Inter";
     font-size: 1.2rem;
   }
-  .urcrypto_social_sign_in {
+  .urcrypto_social_sign_up {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     width: 50%;
   }
-  .urcrypto_social_sign_in div {
+  .urcrypto_social_sign_up div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -88,19 +88,19 @@
     cursor: pointer;
     border: #e5e5e5 solid 1px;
   }
-  .urcrypto_social_sign_in div svg  {
+  .urcrypto_social_sign_up div svg  {
     color: var(--button-color);
   }
   
-  .urcrypto_social_sign_in p {
+  .urcrypto_social_sign_up p {
     font-family: "Inter";
     font-size: 1.2rem;
   }
-  .urcrypto_social_sign_in svg {
+  .urcrypto_social_sign_up svg {
     height: 2rem;
     width: 2rem;
   }
-  .urcrypto_email_sign_in {
+  .urcrypto_email_sign_up {
     height: 60%;
     width: 80%;
     display: flex;
@@ -108,7 +108,7 @@
     align-items: center;
     justify-content: space-around;
   }
-  .urcrypto_email_sign_in input {
+  .urcrypto_email_sign_up input {
     height: 4rem;
     width: 25rem;
     font-size: 1.2rem;
@@ -118,23 +118,23 @@
     font-family: "Inter";
     background-color: #e5e4e4;
   }
-  .urcrypto_email_sign_in_heading {
+  .urcrypto_email_sign_up_heading {
   font-size:1.3rem;
   }
   
-  .urcrypto_email_sign_in_features {
+  .urcrypto_email_sign_up_features {
     width: 25rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
-  .urcrypto_email_sign_in_features a {
+  .urcrypto_email_sign_up_features a {
     text-decoration: none;
     font-size: 1rem;
     font-family: "Inter";
   }
-  .urcrypto_email_sign_in button {
+  .urcrypto_email_sign_up button {
     height: 3rem;
     width: 20rem;
     background-color: transparent;
@@ -153,9 +153,8 @@
   }
   .urcrypto_signup_image_area_container {
     height: 100%;
-
-    width: 100%;
-    background-color: var(--button-color);
+     width: 100%;
+    background: linear-gradient(to top left, #3e55e5, #4058f5ca);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,4 +202,210 @@
   }
   
   
+  @media screen and (max-width: 1024px) {
+    .urcrypto_signup_text_area {
+      height: 95%;
+    }
+  
+    .urcrypto_signup_header {
+      height: 6rem;
+    }
+  
+    .urcrypto_signup_header_link {
+      width: 60%;
+    }
+  
+    .urcrypto_signup_header img {
+      height: 2.4rem;
+      width: auto;
+    }
+  
+    .urcrypto_signup_text_area {
+      width: 55%;
+    }
+  
+    .urcrypto_sign_up_content_header h1 {
+      width: 100%;
+  
+      text-align: center;
+    }
+  
+    .urcrypto_sign_up_content_header p {
+      font-size: 1.6rem;
+    }
+  
+    .urcrypto_signup_header p {
+      font-size: 1.05rem;
+    }
+  
+    .urcrypto_social_sign_up {
+  
+      width: 80%;
+    }
+  
+    .urcrypto_social_sign_up div {
+      height: 4.4rem;
+    }
+  
+  
+    .urcrypto_social_sign_up p {
+      font-size: 1.2rem;
+    }
+  
+  
+    .urcrypto_email_sign_up {
+  
+      width: 90%;
+    }
+  
+    .urcrypto_email_sign_up p {
+      font-size: 1.4rem;
+    }
+  
+    .urcrypto_email_sign_up input {
+      height: 5rem;
+      width: 90%;
+    }
+  
+    .urcrypto_email_sign_up_features a {
+      font-size: 1.2rem;
+    }
+  
+    .urcrypto_email_sign_up button {
+      height: 4rem;
+      width: 90%;
+    }
+    .urcrypto_signup_image_area_container {
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(to top left, #3e55e5, #4058f5ca);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+  }
+  
+  
+  
+  @media screen and (max-width: 811px) {
+    .urcrypto_signup_text_area {
+      height: 94%;
+    }
+  
+    .urcrypto_signup_header {
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .urcrypto_signup_header_link {
+      width: 30%;
+    }
+  
+    .urcrypto_signup_header p {
+      display: none;
+    }
+  
+    .urcrypto_sign_up_content_header h1 {
+      font-size: clamp(1.5rem, 8vw, 2.7rem);
+    }
+  
+    .urcrypto_sign_up_content_header p {
+      font-size: clamp(.8rem, 8vw, 1.3rem);
+    }
+  
+    .urcrypto_signup_header p {
+      font-size: clamp(.7rem, 8vw, 1.3rem);
+    }
+  
+  
+    .urcrypto_social_sign_up {
+      width: 100%;
+    }
+  
+  
+    .urcrypto_email_sign_up input {
+      width: 100%;
+    }
+  
+    .urcrypto_email_sign_up_features {
+      width: 90%;
+    }
+  
+    .urcrypto_email_sign_up_features p {
+      font-size: 1.1rem;
+    }
+  
+    .urcrypto_email_sign_up_features a {
+      font-size: 1.1rem;
+    }
+  
+    .urcrypto_email_sign_up button {
+      width: 95%
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .urcrypto_sign_up_content_header h1 {
+      color: var(--main-background-color);
+    }
+  
+    .urcrypto_signup_container {
+      height: 100%;
+    }
+  
+    .urcrypto_signup_text_area {
+      height: 100%;
+      background: linear-gradient(to top left, #3e55e5, #4058f5ca);
+      width: 100%;
+    }
+  
+    .urcrypto_signup_image_area {
+      display: none;
+    }
+  
+    .urcrypto_signup_header_link {
+      width: 30%;
+      border: solid 1px var(--main-background-color);
+    }
+  
+    .urcrypto_signup_header_link a {
+      border: solid 1px var(--main-background-color);
+      color: var(--button-color);
+      background-color: var(--main-background-color);
+    }
+    .urcrypto_social_sign_up{
+      width: 100%;
+    }
+    .urcrypto_social_sign_up_icons{
+  background-color: var(--main-background-color);
+    }
+    .urcrypto_social_sign_up_icons p{
+  color:var(--button-color) ;
+    }
+  
+  
+    .urcrypto_email_sign_up button {
+      color: var(--button-color);
+      background-color: var(--main-background-color);
+    }
+  
+    .urcrypto_email_sign_up input {
+      width: 100%;
+      color: var(--button-color);
+      background-color: var(--main-background-color);
+    }
+  
+    .urcrypto_email_sign_up_features p {
+      font-size: 1.1rem;
+      color: var(--main-background-color);
+    }
+  
+    .urcrypto_email_sign_up_features a {
+      font-size: 1.1rem;
+      color: var(--main-background-color);
+    }
+  
+  }
   

@@ -5,7 +5,6 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: aqua;
 }
 
 .urcrypto_dashboard_portfolio_container{
@@ -13,15 +12,20 @@ display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-template-rows: 1fr 1fr 1fr 1fr;    
 width: 95%;
+overflow-y: scroll;
 height: 95%;
-gap: 2rem;
+gap: 3rem;
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+.urcrypto_dashboard_portfolio_container ::-webkit-scrollbar{
+    display: none;
 }
 
 .urcrypto_dashboard_portfolio_summary{
  grid-row: span 1;
  grid-column:span 3;
  height: 15rem;
- background-color: antiquewhite;  
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -30,20 +34,18 @@ gap: 2rem;
 .urcrypto_dashboard_portfolio_wallet_balance{
 grid-column:span 2;    
 grid-row: span 3;
-background-color: aquamarine;
-border: 1px solid #e5e5e5;
 width: 100%;
 height: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center; 
-overflow-y:scroll ;
+overflow-y:auto ;
+border-radius: .3rem;
 }
 .urcrypto_dashboard_portfolio_orders{
     grid-column: span 2;    
     grid-row: span 3;
-    background-color: azure;
     display: flex;
     flex-direction: column;
     align-items: center;

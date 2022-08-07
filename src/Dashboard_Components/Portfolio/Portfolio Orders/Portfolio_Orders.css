@@ -1,0 +1,23 @@
+.urcrypto_dashboard_portfolio_orders{
+    overflow-y: scroll;   
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    scroll-snap-align: y;
+    scroll-snap-type: mandatory;
+    height: 100%;
+    width: 100%;
+   z-index: 10;
+   -ms-overflow-style: none;
+   scrollbar-width: none;
+   box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.05);
+   }
+   .urcrypto_dashboard_portfolio_orders::-webkit-scrollbar{
+       display: none;
+   }
+   .urcrypto_dashboard_wallet_orders_list_column_header h3 {
+       color: #000;
+       font-size: 1.4rem;
+       font-weight: 600;
+   }
