@@ -50,3 +50,8 @@ code {
   --stats-subheading-font-size:1.126rem;
   --CTA-font-size:2.5rem;
 }
+/* 
+h1,h2,h3,h4,h5,h6,p,span,input,select,text{
+  padding: 0;
+  margin: 0;
+} */

@@ -15,43 +15,30 @@ const Account_Value = () => {
   return (
     <div className='urcrypto_dashboard_analytics_account_value'>
     <div className='urcrypto_dashboard_analytics_account_value_header'>
-      <h2>Account Value</h2>
+      <h4>Account Value</h4>
   
       <select>
-<option> January</option>
-<option> February</option>
-<option> March</option>
-<option> April</option>
-<option> May</option>
-<option> June </option>
-<option> July</option>
-<option> August</option>
-<option> September</option>
-<option> October</option>
-<option> November</option>
-<option> December</option>
+<option> 2022</option>
+<option> 2021</option>
+<option> 2020</option>
+<option> 2019</option>
+<option> 2018</option>
+<option> 2017 </option>
+<option> 2016</option>
+
       </select>
     </div>
 <div className = "urcrypto_dashboard_analytics_charts">
-<ResponsiveContainer>
-<BarChart width="100%" height='100%' data={data}
-  margin={{ top: 10, right: 30, left: 0,  bottom: 0 }}>
-  <defs>
-    <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8}/>
-      <stop offset="95%" stopColor="#8884d8" stopOpacity={0}/>
-    </linearGradient>
-    <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8}/>
-      <stop offset="95%" stopColor="#82ca9d" stopOpacity={0}/>
-    </linearGradient>
-  </defs>
+<ResponsiveContainer height="80%" width="100%"  className="urcrypto_dashboard_analytics_charts_container" >
+<BarChart   width={"100%"}
+        height={"100%"} data={data}>
   <XAxis dataKey={"date"}
    tickLine={false}
           tickaxisLine={false}
+          axisLine={false}
           tickFormatter={(str) => {
             const date = parseISO(str);
-            if (date.getMonth() % 3 === 0) {
+            if (date.getMonth() % 6 === 0) {
               return format(date, "MMM");
             }
           }}
@@ -60,15 +47,18 @@ const Account_Value = () => {
 
   <Tooltip cursor={false}   viewBox={{ width: 0, height: 0 }}
           content={<CustomTooltip />} />
-  <Bar    barSize={35}
-          radius={[2, 2, 0, 0]}
+  <Bar  className='urcrypto_dashboard_analytics_account_value_charts_bar_bar'   barSize={30}
+          radius={[20, 20, 0, 0]}
           dataKey="value"
           fill="#2725e7"
           stroke="#fff"
-          background={false} />
+          background={false} 
+            
+          />
 </BarChart>
 </ResponsiveContainer>
 </div>
+
     </div>
   )
 }
@@ -78,8 +68,8 @@ export default Account_Value
 function CustomTooltip({ active, payload, label }) {
   if (active) {
     return (
-      <div className="urcrypto_dashboard_statistics_charts_bar_tooltip">
-        <p> ${payload[0].value.toFixed(2)} USD </p>
+      <div className="urcrypto_dashboard_analytics_account_value_charts_bar_tooltip">
+        <p> ${millify(payload[0].value.toFixed(2))} USD </p>
       </div>
     );
   }

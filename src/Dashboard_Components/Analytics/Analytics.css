@@ -1,14 +1,17 @@
-.urcrypto_dashboard_analytics{
+.urcrypto_dashboard_analytics {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    height: 100%;
+    height: 60rem;
+    margin-top: 10rem;
     width: 100%;
-    overflow-y: scroll;
+
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
-.urcrypto_dashboard_analytics_header{
+
+.urcrypto_dashboard_analytics_header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -18,60 +21,69 @@
     height: 7rem;
     width: 95%;
 }
-.urcrypto_dashboard_analytics_header h1{
+
+.urcrypto_dashboard_analytics_header h1 {
     margin: 0;
     padding: 0;
-    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
 }
-.urcrypto_dashboard_analytics_header p{
+
+.urcrypto_dashboard_analytics_header p {
     padding: 0;
     margin: 0;
-    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
 }
-.urcrypto_dashboard_analytics_container{
+
+.urcrypto_dashboard_analytics_container {
     display: grid;
     height: 100%;
     width: 95%;
-    grid-template-columns: repeat(4,(1fr));
-    grid-template-rows: repeat(5,(1fr));
+    grid-template-columns: repeat(4, (1fr));
+    grid-template-rows: repeat(5, (1fr));
     gap: 1rem;
-  
+
 }
 
-.urcrypto_dashboard_analytics_account_value{
-   grid-column:  1/3;
-   grid-row: 2/1;
-   height:100% ;
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-}
-.urcrypto_dashboard_analytics_performance{
-    grid-column: span 2;
-     grid-row:span 2;
-     height:100% ;
-     width: 100%;
-}
-.urcrypto_dashboard_analytics_cashflow{
+.urcrypto_dashboard_analytics_account_value {
     grid-column: 1/3;
-    grid-row: span 2;
-    height:100% ;
-    width: 100%;
+    grid-row: 1/4;
+    box-shadow: 0px 1px 1px 3px rgba(0, 0, 0, 0.04);
+    border-radius: .3rem;
 }
 
-.urcrypto_dashboard_analytics_profits{
-    grid-column: span 2;
-    grid-row: span 2;
+.urcrypto_dashboard_analytics_performance {
+    grid-column: 3/4;
+    grid-row: 1/4;
+    box-shadow: 0px 1px 1px 3px rgba(0, 0, 0, 0.04);
+    border-radius: .3rem;
 }
-.urcrypto_dashboard_analytics_revenue{
+
+.urcrypto_dashboard_analytics_cashflow {
     grid-column: 1/3;
-    grid-row: span 3;
+    grid-row: 4/7;
+    box-shadow: 0px 1px 1px 3px rgba(0, 0, 0, 0.04);
+    border-radius: .3rem;
 }
-.urcrypto_dashboard_analytics_watchlist{
-    grid-column: 4/4;
-    grid-row: span 2;
+
+.urcrypto_dashboard_analytics_profits {
+    grid-column: 3/4;
+    grid-row: 4/7;
+    border-radius: .3rem;
+    box-shadow: 0px 1px 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.urcrypto_dashboard_analytics_revenue {
+    grid-column: 1/3;
+    grid-row: 7/8;
+    box-shadow: 0px 1px 1px 3px rgba(0, 0, 0, 0.04);
+    border-radius: .3rem;
+}
+
+.urcrypto_dashboard_analytics_watchlist {
+    grid-column: 3/4;
+    grid-row: 7/8;
+    box-shadow: 0px 1px 1px 3px rgba(0, 0, 0, 0.04);
+    border-radius: .3rem;
 }

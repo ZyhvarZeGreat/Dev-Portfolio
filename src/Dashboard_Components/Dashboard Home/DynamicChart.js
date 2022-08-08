@@ -79,7 +79,7 @@ const DynamicChart = () => {
     if (active) {
       return (
         <div className="urcrypto_dashboard_statistics_charts_bar_tooltip">
-          <p> ${payload[0].value.toFixed(2)} USD </p>
+          <p> ${millify(payload[0].value.toFixed(2))} USD </p>
         </div>
       );
     }

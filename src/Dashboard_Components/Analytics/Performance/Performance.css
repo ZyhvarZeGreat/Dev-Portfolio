@@ -1,3 +1,33 @@
 .urcrypto_dashboard_analytics_performance{
-    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+.urcrypto_dashboard_analytics_performance_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    width: 95%;
+}
+.urcrypto_dashboard_analytics_performance_charts_container h1{
+    padding: 0;
+    margin: 0;
+}
+
+.urcrypto_dashboard_analytics_performance_charts_container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua
+}
+.urcrypto_dashboard_analytics_performance_charts{
+    height: 50%;
 }

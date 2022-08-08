@@ -1,3 +1,16 @@
 .urcrypto_dashboard_analytics_watchlist{
     background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.urcrypto_dashboard_analytics_watchlist_header{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.urcrypto_dashboard_analytics_watchlist_header h3{
+    font-weight: 600;
 }
