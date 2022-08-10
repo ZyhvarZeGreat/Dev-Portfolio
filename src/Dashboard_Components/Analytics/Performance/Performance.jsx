@@ -30,8 +30,8 @@ const Performance = () => {
           axisLine={false}
           tickFormatter={(str) => {
             const date = parseISO(str);
-            if (date.getMonth() % 6 === 0) {
-              return format(date, "MMM");
+            if (date.getMonth() % 2 === 0) {
+              return format(date, "MM");
             }
           }}
           stroke="#2725e7"
@@ -39,7 +39,7 @@ const Performance = () => {
 
   <Tooltip cursor={false}   viewBox={{ width: 0, height: 0 }}
           content={<CustomTooltip />} />
-  <Bar    barSize={30}
+  <Bar   barSize={10}
           radius={[20, 20, 0, 0]}
           dataKey="value"
           fill="#2725e7"
@@ -59,7 +59,7 @@ const Performance = () => {
           axisLine={false}
           tickFormatter={(str) => {
             const date = parseISO(str);
-            if (date.getMonth() % 3 === 0) {
+            if (date.getDay() === 1 ) {
               return format(date, "MMM");
             }
           }}
@@ -68,7 +68,7 @@ const Performance = () => {
 
   <Tooltip cursor={false}   viewBox={{ width: 0, height: 0 }}
           content={<CustomTooltip />} />
-  <Bar    barSize={30}
+  <Bar barSize={10}
           radius={[20, 20, 0, 0]}
           dataKey="value"
           fill="#2725e7"

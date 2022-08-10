@@ -2,9 +2,10 @@ import React from "react";
 import "./Cashflow.css";
 import { parseISO, format, subMonths } from "date-fns";
 import { millify } from "millify";
+import {UilCircle} from '@iconscout/react-unicons'
 import {
-  AreaChart,
-  Area,
+  LineChart,
+  Line,
   Tooltip,
   CartesianAxis,
   ResponsiveContainer,
@@ -18,6 +19,7 @@ const Cashflow = () => {
     data.push({
       date: subMonths(new Date(), num).toISOString().substring(5, 7),
       value: 400 * Math.random() * 6.3277,
+      value2: 260 * Math.random() * 5.3277,
     });
   }
   return (
@@ -27,14 +29,15 @@ const Cashflow = () => {
 
         <div className="urcrypto_dashboard_analytics_cashflow_indicator">
           <p> Cash in </p>
-          <svg height="20" width="20">
-  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-</svg> 
-          <p> Cash out</p>
-          <svg height="20" width="20">
-  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-</svg> 
-        </div>
+          <svg height="20px" fill="#2725e7" viewBox="0 0  100 100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="50"/>
+</svg>
+
+        <p> Cash out</p>
+        <svg height="20px" fill="#bfbeeea0" viewBox="0 0  100 100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="50"/>
+</svg>
+      </div>
       </div>
 
       <div className="urcrypto_dashboard_analytics_cashflow_chart">
@@ -44,18 +47,18 @@ const Cashflow = () => {
             width="100%"
             className="urcrypto_dashboard_analytics_charts_container"
           >
-            <AreaChart width={"100%"} height={"100%"} data={data}>
+            <LineChart width={"100%"} height={"100%"} data={data}>
               <defs>
                 <linearGradient id="chart1" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#5782db" stopOpacity={0.8} />
-                  <stop offset="95%" stopColor="#5130ff" stopOpacity={0} />
+                  <stop offset="20%" stopColor="#5782db" stopOpacity={0.8} />
+                  <stop offset="80%" stopColor="#5130ff" stopOpacity={0.3} />
                 </linearGradient>
                 <linearGradient id="chart2" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#2d179c" stopOpacity={0.8} />
-                  <stop offset="95%" stopColor="#5767db" stopOpacity={0} />
+                  <stop offset="20%" stopColor="#2d179c" stopOpacity={0.8} />
+                  <stop offset="80%" stopColor="#5767db" stopOpacity={0.3} />
                 </linearGradient>
               </defs>
-              <CartesianGrid strokeDasharray="3 3"/>
+              <CartesianGrid opacity={".3"} vertical={false} verticalFill="#e5e5e5" strokeDasharray="3 3"/>
               <XAxis
                 id="0"
                 dataKey={"date"}
@@ -76,6 +79,7 @@ const Cashflow = () => {
                 tickCount={5}
                 tickaxisLine={false}
                 axisLine={false}
+                tickFormatter={(number) => `$${millify(number.toFixed(2))}`}
                 strokeDasharray="4"
               />
               <Tooltip
@@ -83,23 +87,22 @@ const Cashflow = () => {
                 viewBox={{ width: 0, height: 0 }}
                 content={<CustomTooltip />}
               />
-              <Area
+              <Line
                 className="urcrypto_dashboard_analytics_charts_area"
-                type="monotone"
+              type="monotone"
                 dataKey="value"
-                fill= "url(#chart1)"
-                stroke="#fff"
-                background={false}
+                stroke="url(#chart1)"
+                strokeWidth="2"
+    
               />
-              <Area
+              <Line
    className="urcrypto_dashboard_analytics_charts_area"
                 type="monotone"
-                dataKey="date"
-                fill= "url(#chart2)"
-                stroke="#fff"
-
+                dataKey="value2"
+                stroke="#2725e7"
+                strokeWidth="2"
               />
-            </AreaChart>
+            </LineChart>
           </ResponsiveContainer>
         </div>
       </div>
