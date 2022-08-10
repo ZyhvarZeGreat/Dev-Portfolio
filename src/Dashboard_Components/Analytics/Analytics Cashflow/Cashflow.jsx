@@ -87,6 +87,11 @@ const Cashflow = () => {
                 viewBox={{ width: 0, height: 0 }}
                 content={<CustomTooltip />}
               />
+                 <Tooltip
+                cursor={false}
+                viewBox={{ width: 0, height: 0 }}
+                content={<CustomTooltip />}
+              />
               <Line
                 className="urcrypto_dashboard_analytics_charts_area"
               type="monotone"

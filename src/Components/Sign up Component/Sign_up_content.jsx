@@ -21,7 +21,8 @@ const Sign_in_content = () => {
       setError("");
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
-     navigate("Dashboard/Home")
+     navigate('/Dashboard/Home')
+     console.log("signup successful");
     } 
     catch {
       setError("Failed to create an account");
@@ -55,7 +56,7 @@ const Sign_in_content = () => {
             {error}
           </Alert>
         )}
-        <p>Login to your account</p>
+        <p>Signup for an account</p>
       </div>
       
       <div className="urcrypto_social_sign_in">

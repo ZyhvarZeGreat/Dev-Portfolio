@@ -20,7 +20,7 @@ const navigate = useNavigate()
       setError('') 
       setLoading(true)
       await  signin(emailRef.current.value,passwordRef.current.value)
-      navigate('Dashboard/Home')
+      navigate('Dashboard')
        } 
       catch{
     setError('Failed to sign in')

@@ -15,6 +15,16 @@ justify-content: space-between;
 .urcrypto_dashboard_analytics_profits_header h2,p{
     margin:0 0 5px 5px;
     padding: 5px;
+            
+
+}
+
+.urcrypto_dashboard_analytics_profits_charts{
+    width: 450px;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
     
