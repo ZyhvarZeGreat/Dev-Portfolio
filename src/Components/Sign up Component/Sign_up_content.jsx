@@ -48,14 +48,7 @@ const Sign_in_content = () => {
     <div className="urcrypto_sign_in_content">
       <div className="urcrypto_sign_in_content_header">
         <h1> Welcome Back</h1>
-        {error && (
-          <Alert
-            style={alertStyle}
-            variant="danger"
-          >
-            {error}
-          </Alert>
-        )}
+        {error && (<Alert style={alertStyle}variant="danger">{error} </Alert>)}
         <p>Signup for an account</p>
       </div>
       

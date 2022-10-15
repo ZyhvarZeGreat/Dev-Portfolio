@@ -1,6 +1,6 @@
 import React from "react";
 import { UilEllipsisV } from "@iconscout/react-unicons";
-import { parseISO, format, subMonths, subDays } from "date-fns";
+import { parseISO, format, subMonths, subDays, subWeeks, getDay, toDate } from "date-fns";
 import { millify } from "millify";
 import {
   ResponsiveContainer,
@@ -12,17 +12,18 @@ import {
   CartesianGrid,
 } from "recharts";
 import "./Profits.css";
+import subBusinessDays from "date-fns/subBusinessDays";
 const Profits = () => {
   const data = [];
-  for (let num = 7; num >= 0; num--) {
+  for (let num = 6; num >= 0; num--) {
     data.push({
-      date: subDays(new Date(), num).toISOString().substring(8,10),
+      date: subDays(new Date(), num).toISOString().substring(8, 10),
       value1: 400 * Math.random() * 6.3277,
       value2: 320 * Math.random() * 6.3277,
     });
   }
-  console.log(data)
 
+  // console.log(data)
   return (
     <div className="urcrypto_dashboard_analytics_profits">
       <div className="urcrypto_dashboard_analytics_profits_header">
@@ -59,16 +60,27 @@ const Profits = () => {
               id={0}
               content={<CustomTooltip />}
             />
-            
-            <XAxis tickLine={false}  dataKey="date"
+
+            <XAxis
+              tickLine={false}
+              dataKey="date"
               tickFormatter={(str) => {
-                  const date = parseISO(str);
-                  if (date.getDay()  === 4) {
-                    return format(date, "eeee");
+                const date = parseISO(str);
+               
+                if (date.getMonth() % 3 === 0 ) {
+                    return format(date, "MMM");
                   }
-                }}
-             />
-            <YAxis tickLine={false}                 tickFormatter={(number) => `$${millify(number.toFixed(2))}`}  dataKey="value1" />
+                  
+                  ;
+              
+                
+              }}
+            />
+            <YAxis
+              tickLine={false}
+              tickFormatter={(number) => `$${millify(number.toFixed(2))}`}
+              dataKey="value1"
+            />
             <CartesianGrid vertical={false} strokeDasharray={"2"} />
             <Bar
               barSize={20}

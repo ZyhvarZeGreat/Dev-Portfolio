@@ -33,19 +33,25 @@ const amountVariants = {
 <div className='urcrypto_dashboard_home_statistics_cards_description'>
 <div className='urcrypto_dashboard_home_statistics_cards_description_text'>
 <div>{props.icon}</div>
-  <motion.p variants={amountVariants} initial={"inactive"} animate={isActive ? "active":"inactive"}>{props.description}</motion.p>
+  <motion.p className={`urcrypto_dashboard_home_statistics_cards_description_text_desc ${props.profit}`} variants={amountVariants} initial={"inactive"} animate={isActive ? "active":"inactive"}>{props.description}</motion.p>
 </div>
 <div>chart</div>
 </div>
 <div className='urcrypto_dashboard_home_statistics_cards_amount'>
-<motion.p variants={amountVariants} initial={"inactive"} animate={isActive ? "active":"inactive"}> {props.amount} </motion.p>
+<div className='urcrypto_dashboard_home_statistics_cards_amount_text'>
+<motion.p className={`urcrypto_dashboard_home_statistics_cards_description_text_desc ${props.profit}`} variants={amountVariants} initial={"inactive"} animate={isActive ? "active":"inactive"}> {props.amount} </motion.p>
+
+</div>
+<div className='urcrypto_dashboard_home_cards_chart'>
+<div className={`urcrypto_dashboard_home_cards_chart_icon ${props.profit}`}>
+{props.bottom_icon}
+</div>
+ <p className={`urcrypto_dashboard_home_cards_chart_desc ${props.profit}`}> {props.percentage}  </p>
+</div>
 </div>
       
 
-<div className='urcrypto_dashboard_home_cards_chart'>
- {props.bottom_icon}
- <p> {props.percentage}  </p>
-</div>
+
     </motion.div>
   )
 }

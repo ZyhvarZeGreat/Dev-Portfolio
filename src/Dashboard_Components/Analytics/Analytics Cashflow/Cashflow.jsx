@@ -42,7 +42,7 @@ const Cashflow = () => {
 
       <div className="urcrypto_dashboard_analytics_cashflow_chart">
         <div className="urcrypto_dashboard_analytics_cashflow_charts_container">
-          <ResponsiveContainer
+          <ResponsiveContainer 
             height="80%"
             width="100%"
             className="urcrypto_dashboard_analytics_charts_container"
@@ -70,6 +70,7 @@ const Cashflow = () => {
                   if (date.getMonth() % 6 === 0) {
                     return format(date, "MMM");
                   }
+                  console.log(date)
                 }}
                 stroke="#2725e7"
               />

@@ -3,7 +3,7 @@ import React ,{useRef,useState} from 'react'
 import {UilFacebook,UilGoogle} from '@iconscout/react-unicons'
 import {Link,useNavigate} from 'react-router-dom'
 import { useAuth } from '../../Services/contexts/AuthContext'
-import { Alert } from 'bootstrap'
+import { Alert } from 'react-bootstrap'
 import {motion} from 'framer-motion'
 const Sign_in_content = () => {
   const emailRef = useRef()
@@ -15,12 +15,11 @@ const [Loading, setLoading] = useState(false)
 const navigate = useNavigate()
  async function handleSubmit(e) {
     e.preventDefault()
-  
     try {
       setError('') 
       setLoading(true)
       await  signin(emailRef.current.value,passwordRef.current.value)
-      navigate('Dashboard')
+      navigate('/Dashboard/Home')
        } 
       catch{
     setError('Failed to sign in')
@@ -46,7 +45,7 @@ const navigate = useNavigate()
     <div className='urcrypto_sign_in_content'>
     <div className='urcrypto_sign_in_content_header' >
     <h1> Welcome Back</h1>
-    {error && <Alert variant =  "danger" style = {alertStyle}> {error} </Alert> }
+    {error && (<Alert variant="danger" style = {alertStyle} > {error}</Alert>)} 
     <p>Login to your account</p>
     </div>
  <div className='urcrypto_social_sign_in'>

@@ -17,7 +17,8 @@ const Dashboard_Home = () => {
             description:"Balance",
             amount:"$40,000",
             bottom_icon:<UilPlusCircle/>,
-            percentage:"+35.74%"
+            percentage:"+35.74%",
+            profit:"positive"
 
         },
         {
@@ -26,7 +27,8 @@ const Dashboard_Home = () => {
             description:"Spending",
             amount:"$103,000",
             bottom_icon:<UilMinusCircle/>,
-            percentage:"-10.39%"
+            percentage:"-10.39%",
+            profit:"negative"
 
         },
         {
@@ -35,14 +37,14 @@ const Dashboard_Home = () => {
             description:"Saved",
             amount:"$15,284",
             bottom_icon:<UilPlusCircle/>,
-            percentage:"+17.22%"
-
+            percentage:"+17.22%",
+            profit:"positive"
         },
         
     ]
-    const home_statistics_cards_item = home_statistics_cards_data.map(({id,icon,description,amount,bottom_icon,percentage})=>{
+    const home_statistics_cards_item = home_statistics_cards_data.map(({id,icon,description,amount,bottom_icon,percentage,profit})=>{
         return(
-            <Home_statistics_cards id={id} icon={icon} description={description} amount={amount} bottom_icon={bottom_icon} percentage={percentage}/>
+            <Home_statistics_cards id={id} icon={icon} description={description} amount={amount} profit={profit} bottom_icon={bottom_icon} percentage={percentage}/>
         )
     })
     const data = [];

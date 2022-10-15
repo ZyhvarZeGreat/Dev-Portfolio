@@ -1,9 +1,11 @@
 .urcrypto_dashboard_sidenav{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    background-color: aqua;
+    z-index: 1000000000000;
 }
 .urcrypto_dashboard_sidenav_container{
     height: 100%;

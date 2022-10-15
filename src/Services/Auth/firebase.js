@@ -3,7 +3,7 @@ import 'firebase/compat/auth'
 
 
 
-const app =  firebase.initializeApp({
+const app = new firebase.initializeApp({
     apiKey: "AIzaSyBaCUGxesThIpN0LRO-maQNzYoXp9ByMxE",
 
     authDomain: "urcrypto-388db.firebaseapp.com",
@@ -22,5 +22,5 @@ const app =  firebase.initializeApp({
   
 })
 
-export const auth  =   app.auth()
+export const auth  =  app.auth()
 export default app
